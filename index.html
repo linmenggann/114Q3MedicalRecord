@@ -216,6 +216,7 @@
                     </div>
                     <h3 class="text-2xl font-bold text-slate-500 dark:text-slate-400 mb-2">抽審本數</h3>
                     <p class="text-6xl font-black text-slate-800 dark:text-white">126 <span class="text-2xl font-normal text-slate-500">本</span></p>
+                    <div id="chart-audit-volume" class="mt-6 h-28"></div>
                 </div>
 
                 <!-- 總平均 -->
@@ -226,6 +227,7 @@
                     </div>
                     <h3 class="text-2xl font-bold text-slate-500 dark:text-slate-400 mb-2">總平均</h3>
                     <p class="text-6xl font-black text-slate-800 dark:text-white">88.12 <span class="text-2xl font-normal text-slate-500">分</span></p>
+                    <div id="chart-average-score" class="mt-6 h-28"></div>
                 </div>
 
                 <!-- 全人照護本數 -->
@@ -235,6 +237,7 @@
                     </div>
                     <h3 class="text-2xl font-bold text-slate-500 dark:text-slate-400 mb-2">全人照護本數</h3>
                     <p class="text-6xl font-black text-slate-800 dark:text-white">15 <span class="text-2xl font-normal text-slate-500">本</span></p>
+                    <div id="chart-holistic-care" class="mt-6 h-28"></div>
                 </div>
             </div>
         </section>
@@ -599,23 +602,72 @@
             charts.forEach(chart => chart.dispose());
             charts = [];
 
-            const isDark = htmlElement.classList.contains('dark');
-            const textColor = isDark ? '#e2e8f0' : '#334155';
-            const axisColor = isDark ? '#64748b' : '#94a3b8';
-            const gridColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
-            const backgroundColor = 'transparent';
+              const isDark = htmlElement.classList.contains('dark');
+              const textColor = isDark ? '#e2e8f0' : '#334155';
+              const axisColor = isDark ? '#64748b' : '#94a3b8';
+              const gridColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
+              const backgroundColor = 'transparent';
+              const seasonLabels = ['第五次', '第一季', '第二季', '第三季'];
 
-            const commonOptions = {
-                backgroundColor: backgroundColor,
-                textStyle: { fontFamily: 'Noto Sans TC' },
-                grid: { containLabel: true, left: '5%', right: '5%', bottom: '5%', top: '15%' },
+              const commonOptions = {
+                  backgroundColor: backgroundColor,
+                  textStyle: { fontFamily: 'Noto Sans TC' },
+                  grid: { containLabel: true, left: '5%', right: '5%', bottom: '5%', top: '15%' },
                 xAxis: { axisLine: { lineStyle: { color: axisColor } }, axisLabel: { color: textColor, fontSize: 14 } },
-                yAxis: { splitLine: { lineStyle: { color: gridColor } }, axisLabel: { color: textColor } },
-                tooltip: { trigger: 'axis' }
-            };
+                  yAxis: { splitLine: { lineStyle: { color: gridColor } }, axisLabel: { color: textColor } },
+                  tooltip: { trigger: 'axis' }
+              };
 
-            // 1. Internal Score Chart
-            const chartInternal = echarts.init(document.getElementById('chart-internal-score'));
+              const buildSparklineOptions = (data, color) => ({
+                  backgroundColor,
+                  grid: { left: 10, right: 10, top: 10, bottom: 20 },
+                  tooltip: { trigger: 'axis' },
+                  xAxis: {
+                      type: 'category',
+                      data: seasonLabels,
+                      boundaryGap: false,
+                      axisLine: { show: false },
+                      axisTick: { show: false },
+                      axisLabel: { color: textColor, fontSize: 12 }
+                  },
+                  yAxis: {
+                      type: 'value',
+                      axisLine: { show: false },
+                      axisTick: { show: false },
+                      splitLine: { show: false }
+                  },
+                  series: [{
+                      type: 'line',
+                      smooth: true,
+                      data,
+                      symbol: 'circle',
+                      symbolSize: 8,
+                      lineStyle: { color, width: 3 },
+                      itemStyle: { color },
+                      areaStyle: {
+                          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                              { offset: 0, color: isDark ? `${color}CC` : `${color}B3` },
+                              { offset: 1, color: 'rgba(255,255,255,0)' }
+                          ])
+                      }
+                  }]
+              });
+
+              // Sparkline charts for seasonal trends
+              const auditSparkline = echarts.init(document.getElementById('chart-audit-volume'));
+              auditSparkline.setOption(buildSparklineOptions([163, 145, 144, 126], '#0ea5e9'));
+              charts.push(auditSparkline);
+
+              const averageSparkline = echarts.init(document.getElementById('chart-average-score'));
+              averageSparkline.setOption(buildSparklineOptions([87.33, 88.37, 87.65, 88.12], '#f97316'));
+              charts.push(averageSparkline);
+
+              const holisticSparkline = echarts.init(document.getElementById('chart-holistic-care'));
+              holisticSparkline.setOption(buildSparklineOptions([20, 21, 24, 15], '#10b981'));
+              charts.push(holisticSparkline);
+
+              // 1. Internal Score Chart
+              const chartInternal = echarts.init(document.getElementById('chart-internal-score'));
             chartInternal.setOption({
                 ...commonOptions,
                 xAxis: { ...commonOptions.xAxis, data: ['內分泌\n新陳代謝科', '復健科', '血液腫瘤科'], axisLabel: { interval: 0, rotate: 0, fontSize: 14, fontWeight: 'bold' } },
