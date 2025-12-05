@@ -618,23 +618,24 @@
                   tooltip: { trigger: 'axis' }
               };
 
-              const buildSparklineOptions = (data, color) => ({
+              const buildSparklineOptions = (data, color, unit) => ({
                   backgroundColor,
-                  grid: { left: 10, right: 10, top: 10, bottom: 20 },
+                  grid: { left: 36, right: 16, top: 24, bottom: 32 },
                   tooltip: { trigger: 'axis' },
                   xAxis: {
                       type: 'category',
                       data: seasonLabels,
                       boundaryGap: false,
-                      axisLine: { show: false },
-                      axisTick: { show: false },
+                      axisLine: { show: true, lineStyle: { color: axisColor } },
+                      axisTick: { show: true, lineStyle: { color: axisColor } },
                       axisLabel: { color: textColor, fontSize: 12 }
                   },
                   yAxis: {
                       type: 'value',
-                      axisLine: { show: false },
-                      axisTick: { show: false },
-                      splitLine: { show: false }
+                      axisLine: { show: true, lineStyle: { color: axisColor } },
+                      axisTick: { show: true, lineStyle: { color: axisColor } },
+                      splitLine: { show: true, lineStyle: { color: gridColor } },
+                      splitNumber: 4
                   },
                   series: [{
                       type: 'line',
@@ -644,6 +645,14 @@
                       symbolSize: 8,
                       lineStyle: { color, width: 3 },
                       itemStyle: { color },
+                      label: {
+                          show: true,
+                          position: 'top',
+                          formatter: ({ value }) => `${value}${unit}`,
+                          color: textColor,
+                          fontSize: 12,
+                          fontWeight: 'bold'
+                      },
                       areaStyle: {
                           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
                               { offset: 0, color: isDark ? `${color}CC` : `${color}B3` },
@@ -655,15 +664,15 @@
 
               // Sparkline charts for seasonal trends
               const auditSparkline = echarts.init(document.getElementById('chart-audit-volume'));
-              auditSparkline.setOption(buildSparklineOptions([163, 145, 144, 126], '#0ea5e9'));
+              auditSparkline.setOption(buildSparklineOptions([163, 145, 144, 126], '#0ea5e9', '本'));
               charts.push(auditSparkline);
 
               const averageSparkline = echarts.init(document.getElementById('chart-average-score'));
-              averageSparkline.setOption(buildSparklineOptions([87.33, 88.37, 87.65, 88.12], '#f97316'));
+              averageSparkline.setOption(buildSparklineOptions([87.33, 88.37, 87.65, 88.12], '#f97316', '分'));
               charts.push(averageSparkline);
 
               const holisticSparkline = echarts.init(document.getElementById('chart-holistic-care'));
-              holisticSparkline.setOption(buildSparklineOptions([20, 21, 24, 15], '#10b981'));
+              holisticSparkline.setOption(buildSparklineOptions([20, 21, 24, 15], '#10b981', '本'));
               charts.push(holisticSparkline);
 
               // 1. Internal Score Chart
