@@ -1,0 +1,782 @@
+
+<!DOCTYPE html><html lang="zh-TW" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>114年第3季成績優良名單及病歷審查結果</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    },
+                    colors: {
+                        medical: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .slide-section {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            border-bottom: 1px solid rgba(226, 232, 240, 0.5);
+        }
+        .dark .slide-section {
+            border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1.125rem;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 0.75rem;
+            text-align: center;
+        }
+        .dark th, .dark td {
+            border-color: #475569;
+        }
+        th {
+            background-color: #f1f5f9;
+            font-weight: 700;
+        }
+        .dark th {
+            background-color: #1e293b;
+            color: #f8fafc;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        .dark tr:nth-child(even) {
+            background-color: #0f172a;
+        }
+        .chart-container {
+            width: 100%;
+            height: 450px;
+            margin-bottom: 1rem;
+        }
+        .highlight-text {
+            color: #dc2626;
+            font-weight: bold;
+        }
+        .dark .highlight-text {
+            color: #ef4444;
+        }
+    </style>
+<script src="https://felo.ai/js/iframe.js?v=1764843127474"></script>
+ <style>
+* {
+  scrollbar-width: thin !important;
+  scrollbar-color: #bfc5ce transparent !important;
+}
+*::-webkit-scrollbar {
+  width: 6px !important;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #bfc5ce !important;
+  border-radius: 9999px !important;
+}
+*::-webkit-scrollbar-track {
+  background-color: transparent !important;
+  border-radius: 9999px !important;
+}
+</style><style id="felo-iframe-styles">html,body{margin:0 !important;padding:0 !important;}</style></head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300" contenteditable="false" spellcheck="false" style="cursor: default;">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-xl font-black tracking-tight text-medical-800 dark:text-medical-100">
+                        <i class="fa-solid fa-notes-medical mr-2"></i>病歷審查報告
+                    </span>
+                </div>
+                <button id="theme-toggle" class="p-2 rounded-lg text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-medical-500 transition-all">
+                    <i class="fas fa-moon hidden dark:block"></i>
+                    
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Slide 1: 成績優良名單 -->
+        <section class="slide-section">
+            <h1 class="text-4xl md:text-5xl font-black text-center mb-12 text-slate-800 dark:text-white leading-tight">
+                114年第三季(7~9月)<br>病歷書寫成績優良名單
+            </h1>
+            
+            <div class="overflow-x-auto shadow-lg rounded-xl bg-white dark:bg-slate-800">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>組別</th>
+                            <th>名次</th>
+                            <th>科別</th>
+                            <th>姓名</th>
+                            <th>職級</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 內科系 -->
+                        <tr>
+                            <td rowspan="4" class="font-bold text-medical-700 dark:text-medical-300 bg-medical-50 dark:bg-slate-800">内科系<br>住院醫師組</td>
+                            <td>1</td><td>復健部</td><td>何承蔚</td><td>LR1</td>
+                        </tr>
+                        <tr><td>2</td><td>内科部</td><td data-element-id="b663c466-38f8-4dbe-986e-8dbd59264750">吳俊諺</td><td>LR1</td></tr>
+                        <tr><td>3</td><td>内科部(run 加護醫學部)</td><td data-element-id="fd137081-4ace-4b22-9af4-9aa8e88d9b4b">林邵<b><span style="font-size: 18px; font-family: 微軟正黑體, sans-serif; position: relative; top: 0px; left: 0px; font-weight: normal;" data-element-id="1df69365-615d-4538-92bc-21977558e6b3">娗</span></b></td><td>LR2</td></tr>
+                        <tr><td>4</td><td>家庭醫學部(run 兒科部)</td><td data-element-id="8a4ecee5-c572-4d3c-9a41-3358f119e751">謝晟宣</td><td>CR(LR3)</td></tr>
+                        
+                        <!-- 外科系 -->
+                        <tr>
+                            <td rowspan="5" class="font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-slate-800">外科系<br>住院醫師組</td>
+                            <td>1</td><td>外科部</td><td>高偉鈞</td><td>LR2</td>
+                        </tr>
+                        <tr><td>2</td><td>婦產部</td><td data-element-id="a39271a9-7bb1-4a9f-8dcb-00e876d0dc12">吳昱嫻</td><td>LR2</td></tr>
+                        <tr><td>3</td><td>眼科部</td><td>許懷文</td><td>LR3</td></tr>
+                        <tr><td>4</td><td>家庭醫學部(run 神經外科)</td><td>許富竣</td><td>LR1</td></tr>
+                        <tr><td>5</td><td>骨科部</td><td>饋文育</td><td>LR2</td></tr>
+                        
+                        <!-- 急診 -->
+                        <tr>
+                            <td rowspan="2" class="font-bold text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-slate-800">急診醫學部<br>住院醫師組</td>
+                            <td>1</td><td rowspan="2">急診醫學部</td><td>秦郁涵</td><td>LR2</td>
+                        </tr>
+                        <tr><td>2</td><td>李東翰</td><td>LR1</td></tr>
+                        
+                        <!-- 精神 -->
+                        <tr>
+                            <td class="font-bold text-purple-700 dark:text-purple-300 bg-purple-50 dark:bg-slate-800">精神醫學部<br>住院醫師組</td>
+                            <td>1</td><td>精神醫學部</td><td data-element-id="ac218578-d54a-4e03-a5b3-b9cad18879a1">李致諠</td><td>LR1</td>
+                        </tr>
+                        
+                        <!-- PGY -->
+                        <tr>
+                            <td rowspan="5" class="font-bold text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-slate-800">PGY 醫師組</td>
+                            <td>1</td><td rowspan="5">一般科</td><td>陳建融</td><td>PGY2</td>
+                        </tr>
+                        <tr><td>2</td><td>劉紹弘</td><td>PGY1</td></tr>
+                        <tr><td>3</td><td>梁詠潔</td><td>PGY2</td></tr>
+                        <tr><td>4</td><td>王亭尹</td><td>PGY1</td></tr>
+                        <tr><td>5</td><td>黃迎真</td><td>PGY2</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="mt-8 p-4 bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 rounded-r-lg">
+                <p class="text-xl font-bold text-yellow-800 dark:text-yellow-200">
+                    <i class="fas fa-award mr-2"></i>備註：以上名單皆各頒發獎金2,000元及獎狀乙紙
+                </p>
+            </div>
+        </section>
+
+        <!-- Slide 2: 審查結果概覽 -->
+        <section class="slide-section">
+            <h1 class="text-4xl md:text-5xl font-black text-center mb-6 leading-tight">
+                114年度第三季(114/07-09月)<br>受訓醫師/醫學生病歷審查結果
+            </h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <!-- 抽審本數 -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-xl text-center transform hover:scale-105 transition-transform duration-300 border border-slate-100 dark:border-slate-700">
+                    <div class="text-medical-600 dark:text-medical-400 mb-4">
+                        <i class="fas fa-book-medical text-6xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-500 dark:text-slate-400 mb-2">抽審本數</h3>
+                    <p class="text-6xl font-black text-slate-800 dark:text-white">126 <span class="text-2xl font-normal text-slate-500">本</span></p>
+                </div>
+
+                <!-- 總平均 -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-xl text-center transform hover:scale-105 transition-transform duration-300 border border-slate-100 dark:border-slate-700 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mr-4 -mt-4 w-24 h-24 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full opacity-20 blur-xl"></div>
+                    <div class="text-orange-500 mb-4">
+                        <i class="fas fa-chart-line text-6xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-500 dark:text-slate-400 mb-2">總平均</h3>
+                    <p class="text-6xl font-black text-slate-800 dark:text-white">88.12 <span class="text-2xl font-normal text-slate-500">分</span></p>
+                </div>
+
+                <!-- 全人照護本數 -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-xl text-center transform hover:scale-105 transition-transform duration-300 border border-slate-100 dark:border-slate-700">
+                    <div class="text-emerald-600 dark:text-emerald-400 mb-4">
+                        <i class="fas fa-user-md text-6xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-500 dark:text-slate-400 mb-2">全人照護本數</h3>
+                    <p class="text-6xl font-black text-slate-800 dark:text-white">15 <span class="text-2xl font-normal text-slate-500">本</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: 內/外科系總成績 -->
+        <section class="slide-section">
+            <h2 class="text-4xl font-black text-center mb-10">114-Q3總成績：內/外科系</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
+                <!-- 內科系 Chart -->
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg">
+                    <div id="chart-internal-score" class="chart-container" _echarts_instance_="ec_1764843126352" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;" data-chart-option="{&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;textStyle&quot;:{&quot;fontFamily&quot;:&quot;Noto Sans TC&quot;,&quot;fontSize&quot;:12,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;fontWeight&quot;:&quot;normal&quot;},&quot;darkMode&quot;:&quot;auto&quot;,&quot;colorBy&quot;:&quot;series&quot;,&quot;color&quot;:[&quot;#5470c6&quot;,&quot;#91cc75&quot;,&quot;#fac858&quot;,&quot;#ee6666&quot;,&quot;#73c0de&quot;,&quot;#3ba272&quot;,&quot;#fc8452&quot;,&quot;#9a60b4&quot;,&quot;#ea7ccc&quot;],&quot;gradientColor&quot;:[&quot;#f6efa6&quot;,&quot;#d88273&quot;,&quot;#bf444c&quot;],&quot;aria&quot;:{&quot;decal&quot;:{&quot;decals&quot;:[{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[1,0],&quot;dashArrayY&quot;:[2,5],&quot;symbolSize&quot;:1,&quot;rotation&quot;:0.5235987755982988},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;symbol&quot;:&quot;circle&quot;,&quot;dashArrayX&quot;:[[8,8],[0,8,8,0]],&quot;dashArrayY&quot;:[6,0],&quot;symbolSize&quot;:0.8},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[1,0],&quot;dashArrayY&quot;:[4,3],&quot;rotation&quot;:-0.7853981633974483},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[[6,6],[0,6,6,0]],&quot;dashArrayY&quot;:[6,0]},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[[1,0],[1,6]],&quot;dashArrayY&quot;:[1,0,6,0],&quot;rotation&quot;:0.7853981633974483},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;symbol&quot;:&quot;triangle&quot;,&quot;dashArrayX&quot;:[[9,9],[0,9,9,0]],&quot;dashArrayY&quot;:[7,2],&quot;symbolSize&quot;:0.75}]}},&quot;stateAnimation&quot;:{&quot;duration&quot;:300,&quot;easing&quot;:&quot;cubicOut&quot;},&quot;animation&quot;:&quot;auto&quot;,&quot;animationDuration&quot;:1000,&quot;animationDurationUpdate&quot;:500,&quot;animationEasing&quot;:&quot;cubicInOut&quot;,&quot;animationEasingUpdate&quot;:&quot;cubicInOut&quot;,&quot;animationThreshold&quot;:2000,&quot;progressiveThreshold&quot;:3000,&quot;progressive&quot;:400,&quot;hoverLayerThreshold&quot;:3000,&quot;useUTC&quot;:false,&quot;axisPointer&quot;:[{&quot;show&quot;:&quot;auto&quot;,&quot;z&quot;:50,&quot;type&quot;:&quot;line&quot;,&quot;snap&quot;:false,&quot;triggerTooltip&quot;:true,&quot;triggerEmphasis&quot;:true,&quot;value&quot;:null,&quot;status&quot;:null,&quot;link&quot;:[],&quot;animation&quot;:null,&quot;animationDurationUpdate&quot;:200,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#B9BEC9&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;dashed&quot;},&quot;shadowStyle&quot;:{&quot;color&quot;:&quot;rgba(210,219,238,0.2)&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;formatter&quot;:null,&quot;precision&quot;:&quot;auto&quot;,&quot;margin&quot;:3,&quot;color&quot;:&quot;#fff&quot;,&quot;padding&quot;:[5,7,5,7],&quot;backgroundColor&quot;:&quot;auto&quot;,&quot;borderColor&quot;:null,&quot;borderWidth&quot;:0,&quot;borderRadius&quot;:3},&quot;handle&quot;:{&quot;show&quot;:false,&quot;icon&quot;:&quot;M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4h1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7v-1.2h6.6z M13.3,22H6.7v-1.2h6.6z M13.3,19.6H6.7v-1.2h6.6z&quot;,&quot;size&quot;:45,&quot;margin&quot;:50,&quot;color&quot;:&quot;#333&quot;,&quot;shadowBlur&quot;:3,&quot;shadowColor&quot;:&quot;#aaa&quot;,&quot;shadowOffsetX&quot;:0,&quot;shadowOffsetY&quot;:2,&quot;throttle&quot;:40}}],&quot;tooltip&quot;:[{&quot;trigger&quot;:&quot;axis&quot;,&quot;z&quot;:60,&quot;show&quot;:true,&quot;showContent&quot;:true,&quot;triggerOn&quot;:&quot;mousemove|click&quot;,&quot;alwaysShowContent&quot;:false,&quot;displayMode&quot;:&quot;single&quot;,&quot;renderMode&quot;:&quot;auto&quot;,&quot;confine&quot;:null,&quot;showDelay&quot;:0,&quot;hideDelay&quot;:100,&quot;transitionDuration&quot;:0.4,&quot;enterable&quot;:false,&quot;backgroundColor&quot;:&quot;#fff&quot;,&quot;shadowBlur&quot;:10,&quot;shadowColor&quot;:&quot;rgba(0, 0, 0, .2)&quot;,&quot;shadowOffsetX&quot;:1,&quot;shadowOffsetY&quot;:2,&quot;borderRadius&quot;:4,&quot;borderWidth&quot;:1,&quot;padding&quot;:null,&quot;extraCssText&quot;:&quot;&quot;,&quot;axisPointer&quot;:{&quot;type&quot;:&quot;line&quot;,&quot;axis&quot;:&quot;auto&quot;,&quot;animation&quot;:&quot;auto&quot;,&quot;animationDurationUpdate&quot;:200,&quot;animationEasingUpdate&quot;:&quot;exponentialOut&quot;,&quot;crossStyle&quot;:{&quot;color&quot;:&quot;#999&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;dashed&quot;,&quot;textStyle&quot;:{}}},&quot;textStyle&quot;:{&quot;color&quot;:&quot;#666&quot;,&quot;fontSize&quot;:14}}],&quot;yAxis&quot;:[{&quot;splitLine&quot;:{&quot;lineStyle&quot;:{&quot;color&quot;:&quot;rgba(0,0,0,0.1)&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;show&quot;:true},&quot;axisLabel&quot;:{&quot;color&quot;:&quot;#334155&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;rotate&quot;:0,&quot;showMinLabel&quot;:null,&quot;showMaxLabel&quot;:null,&quot;margin&quot;:8,&quot;fontSize&quot;:12},&quot;min&quot;:80,&quot;max&quot;:95,&quot;boundaryGap&quot;:[0,0],&quot;axisLine&quot;:{&quot;show&quot;:&quot;auto&quot;,&quot;onZero&quot;:true,&quot;onZeroAxisIndex&quot;:null,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#6E7079&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;symbol&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;symbolSize&quot;:[10,15]},&quot;axisTick&quot;:{&quot;show&quot;:&quot;auto&quot;,&quot;inside&quot;:false,&quot;length&quot;:5,&quot;lineStyle&quot;:{&quot;width&quot;:1}},&quot;splitNumber&quot;:5,&quot;minorTick&quot;:{&quot;show&quot;:false,&quot;splitNumber&quot;:5,&quot;length&quot;:3,&quot;lineStyle&quot;:{}},&quot;minorSplitLine&quot;:{&quot;show&quot;:false,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#F4F7FD&quot;,&quot;width&quot;:1}},&quot;show&quot;:true,&quot;z&quot;:0,&quot;inverse&quot;:false,&quot;name&quot;:&quot;&quot;,&quot;nameLocation&quot;:&quot;end&quot;,&quot;nameRotate&quot;:null,&quot;nameTruncate&quot;:{&quot;maxWidth&quot;:null,&quot;ellipsis&quot;:&quot;...&quot;,&quot;placeholder&quot;:&quot;.&quot;},&quot;nameTextStyle&quot;:{},&quot;nameGap&quot;:15,&quot;silent&quot;:false,&quot;triggerEvent&quot;:false,&quot;tooltip&quot;:{&quot;show&quot;:false},&quot;axisPointer&quot;:{},&quot;splitArea&quot;:{&quot;show&quot;:false,&quot;areaStyle&quot;:{&quot;color&quot;:[&quot;rgba(250,250,250,0.2)&quot;,&quot;rgba(210,219,238,0.2)&quot;]}},&quot;offset&quot;:0,&quot;type&quot;:&quot;value&quot;}],&quot;xAxis&quot;:[{&quot;axisLine&quot;:{&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#94a3b8&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;show&quot;:true,&quot;onZero&quot;:true,&quot;onZeroAxisIndex&quot;:null,&quot;symbol&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;symbolSize&quot;:[10,15]},&quot;axisLabel&quot;:{&quot;interval&quot;:0,&quot;rotate&quot;:0,&quot;fontSize&quot;:14,&quot;fontWeight&quot;:&quot;bold&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;showMinLabel&quot;:null,&quot;showMaxLabel&quot;:null,&quot;margin&quot;:8},&quot;data&quot;:[&quot;內分泌\n新陳代謝科&quot;,&quot;復健科&quot;,&quot;血液腫瘤科&quot;],&quot;boundaryGap&quot;:true,&quot;deduplication&quot;:null,&quot;splitLine&quot;:{&quot;show&quot;:false,&quot;lineStyle&quot;:{&quot;color&quot;:[&quot;#E0E6F1&quot;],&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;}},&quot;axisTick&quot;:{&quot;alignWithLabel&quot;:false,&quot;interval&quot;:&quot;auto&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;length&quot;:5,&quot;lineStyle&quot;:{&quot;width&quot;:1}},&quot;show&quot;:true,&quot;z&quot;:0,&quot;inverse&quot;:false,&quot;name&quot;:&quot;&quot;,&quot;nameLocation&quot;:&quot;end&quot;,&quot;nameRotate&quot;:null,&quot;nameTruncate&quot;:{&quot;maxWidth&quot;:null,&quot;ellipsis&quot;:&quot;...&quot;,&quot;placeholder&quot;:&quot;.&quot;},&quot;nameTextStyle&quot;:{},&quot;nameGap&quot;:15,&quot;silent&quot;:false,&quot;triggerEvent&quot;:false,&quot;tooltip&quot;:{&quot;show&quot;:false},&quot;axisPointer&quot;:{&quot;status&quot;:&quot;hide&quot;,&quot;value&quot;:2},&quot;splitArea&quot;:{&quot;show&quot;:false,&quot;areaStyle&quot;:{&quot;color&quot;:[&quot;rgba(250,250,250,0.2)&quot;,&quot;rgba(210,219,238,0.2)&quot;]}},&quot;offset&quot;:0,&quot;type&quot;:&quot;category&quot;}],&quot;grid&quot;:[{&quot;containLabel&quot;:true,&quot;left&quot;:&quot;5%&quot;,&quot;right&quot;:&quot;5%&quot;,&quot;bottom&quot;:&quot;5%&quot;,&quot;top&quot;:&quot;15%&quot;,&quot;show&quot;:false,&quot;z&quot;:0,&quot;backgroundColor&quot;:&quot;rgba(0,0,0,0)&quot;,&quot;borderWidth&quot;:1,&quot;borderColor&quot;:&quot;#ccc&quot;}],&quot;series&quot;:[{&quot;name&quot;:&quot;分數&quot;,&quot;type&quot;:&quot;bar&quot;,&quot;data&quot;:[93,89.4,89.38],&quot;itemStyle&quot;:{&quot;color&quot;:&quot;#0ea5e9&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;position&quot;:&quot;top&quot;,&quot;color&quot;:&quot;#334155&quot;,&quot;fontSize&quot;:16,&quot;fontWeight&quot;:&quot;bold&quot;},&quot;markLine&quot;:{&quot;data&quot;:[{&quot;yAxis&quot;:87.1,&quot;name&quot;:&quot;內科系平均 87.1&quot;,&quot;label&quot;:{},&quot;emphasis&quot;:{&quot;label&quot;:{}}}],&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#ef4444&quot;,&quot;width&quot;:3,&quot;type&quot;:&quot;solid&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;position&quot;:&quot;end&quot;,&quot;formatter&quot;:&quot;平均: {c}&quot;,&quot;color&quot;:&quot;#ef4444&quot;,&quot;fontSize&quot;:14,&quot;fontWeight&quot;:&quot;bold&quot;},&quot;emphasis&quot;:{&quot;label&quot;:{&quot;show&quot;:true}}},&quot;z&quot;:2,&quot;coordinateSystem&quot;:&quot;cartesian2d&quot;,&quot;legendHoverLink&quot;:true,&quot;barMinHeight&quot;:0,&quot;barMinAngle&quot;:0,&quot;large&quot;:false,&quot;largeThreshold&quot;:400,&quot;progressive&quot;:3000,&quot;progressiveChunkMode&quot;:&quot;mod&quot;,&quot;clip&quot;:true,&quot;roundCap&quot;:false,&quot;showBackground&quot;:false,&quot;backgroundStyle&quot;:{&quot;color&quot;:&quot;rgba(180, 180, 180, 0.2)&quot;,&quot;borderColor&quot;:null,&quot;borderWidth&quot;:0,&quot;borderType&quot;:&quot;solid&quot;,&quot;borderRadius&quot;:0,&quot;shadowBlur&quot;:0,&quot;shadowColor&quot;:null,&quot;shadowOffsetX&quot;:0,&quot;shadowOffsetY&quot;:0,&quot;opacity&quot;:1},&quot;select&quot;:{&quot;itemStyle&quot;:{&quot;borderColor&quot;:&quot;#212121&quot;}},&quot;realtimeSort&quot;:false,&quot;emphasis&quot;:{&quot;label&quot;:{&quot;show&quot;:true}}}],&quot;visualMap&quot;:[],&quot;legend&quot;:[],&quot;markArea&quot;:[],&quot;markLine&quot;:[{&quot;z&quot;:5,&quot;symbol&quot;:[&quot;circle&quot;,&quot;arrow&quot;],&quot;symbolSize&quot;:[8,16],&quot;symbolOffset&quot;:0,&quot;precision&quot;:2,&quot;tooltip&quot;:{&quot;trigger&quot;:&quot;item&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;position&quot;:&quot;end&quot;,&quot;distance&quot;:5},&quot;lineStyle&quot;:{&quot;type&quot;:&quot;dashed&quot;},&quot;emphasis&quot;:{&quot;label&quot;:{&quot;show&quot;:true},&quot;lineStyle&quot;:{&quot;width&quot;:3}},&quot;animationEasing&quot;:&quot;linear&quot;}],&quot;markPoint&quot;:[],&quot;brush&quot;:[],&quot;dataZoom&quot;:[]}"><div style="position: relative; width: 472px; height: 450px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="590" height="562" style="position: absolute; left: 0px; top: 0px; width: 472px; height: 450px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div>
+                    <div class="mt-4 p-4 bg-slate-50 dark:bg-slate-700/50 rounded-lg">
+                        <p class="text-2xl font-bold text-slate-800 dark:text-white text-center">
+                            (內科系)總成績優良前三名：
+                        </p>
+                        <p class="text-xl text-center mt-2 text-medical-600 dark:text-medical-300 font-semibold">
+                            內分泌新陳代謝科、復健科、血液腫瘤科
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 外科系 Chart -->
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg">
+                    <div id="chart-surgical-score" class="chart-container" _echarts_instance_="ec_1764843126353" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;" data-chart-option="{&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;textStyle&quot;:{&quot;fontFamily&quot;:&quot;Noto Sans TC&quot;,&quot;fontSize&quot;:12,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;fontWeight&quot;:&quot;normal&quot;},&quot;darkMode&quot;:&quot;auto&quot;,&quot;colorBy&quot;:&quot;series&quot;,&quot;color&quot;:[&quot;#5470c6&quot;,&quot;#91cc75&quot;,&quot;#fac858&quot;,&quot;#ee6666&quot;,&quot;#73c0de&quot;,&quot;#3ba272&quot;,&quot;#fc8452&quot;,&quot;#9a60b4&quot;,&quot;#ea7ccc&quot;],&quot;gradientColor&quot;:[&quot;#f6efa6&quot;,&quot;#d88273&quot;,&quot;#bf444c&quot;],&quot;aria&quot;:{&quot;decal&quot;:{&quot;decals&quot;:[{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[1,0],&quot;dashArrayY&quot;:[2,5],&quot;symbolSize&quot;:1,&quot;rotation&quot;:0.5235987755982988},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;symbol&quot;:&quot;circle&quot;,&quot;dashArrayX&quot;:[[8,8],[0,8,8,0]],&quot;dashArrayY&quot;:[6,0],&quot;symbolSize&quot;:0.8},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[1,0],&quot;dashArrayY&quot;:[4,3],&quot;rotation&quot;:-0.7853981633974483},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[[6,6],[0,6,6,0]],&quot;dashArrayY&quot;:[6,0]},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[[1,0],[1,6]],&quot;dashArrayY&quot;:[1,0,6,0],&quot;rotation&quot;:0.7853981633974483},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;symbol&quot;:&quot;triangle&quot;,&quot;dashArrayX&quot;:[[9,9],[0,9,9,0]],&quot;dashArrayY&quot;:[7,2],&quot;symbolSize&quot;:0.75}]}},&quot;stateAnimation&quot;:{&quot;duration&quot;:300,&quot;easing&quot;:&quot;cubicOut&quot;},&quot;animation&quot;:&quot;auto&quot;,&quot;animationDuration&quot;:1000,&quot;animationDurationUpdate&quot;:500,&quot;animationEasing&quot;:&quot;cubicInOut&quot;,&quot;animationEasingUpdate&quot;:&quot;cubicInOut&quot;,&quot;animationThreshold&quot;:2000,&quot;progressiveThreshold&quot;:3000,&quot;progressive&quot;:400,&quot;hoverLayerThreshold&quot;:3000,&quot;useUTC&quot;:false,&quot;axisPointer&quot;:[{&quot;show&quot;:&quot;auto&quot;,&quot;z&quot;:50,&quot;type&quot;:&quot;line&quot;,&quot;snap&quot;:false,&quot;triggerTooltip&quot;:true,&quot;triggerEmphasis&quot;:true,&quot;value&quot;:null,&quot;status&quot;:null,&quot;link&quot;:[],&quot;animation&quot;:null,&quot;animationDurationUpdate&quot;:200,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#B9BEC9&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;dashed&quot;},&quot;shadowStyle&quot;:{&quot;color&quot;:&quot;rgba(210,219,238,0.2)&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;formatter&quot;:null,&quot;precision&quot;:&quot;auto&quot;,&quot;margin&quot;:3,&quot;color&quot;:&quot;#fff&quot;,&quot;padding&quot;:[5,7,5,7],&quot;backgroundColor&quot;:&quot;auto&quot;,&quot;borderColor&quot;:null,&quot;borderWidth&quot;:0,&quot;borderRadius&quot;:3},&quot;handle&quot;:{&quot;show&quot;:false,&quot;icon&quot;:&quot;M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4h1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7v-1.2h6.6z M13.3,22H6.7v-1.2h6.6z M13.3,19.6H6.7v-1.2h6.6z&quot;,&quot;size&quot;:45,&quot;margin&quot;:50,&quot;color&quot;:&quot;#333&quot;,&quot;shadowBlur&quot;:3,&quot;shadowColor&quot;:&quot;#aaa&quot;,&quot;shadowOffsetX&quot;:0,&quot;shadowOffsetY&quot;:2,&quot;throttle&quot;:40}}],&quot;tooltip&quot;:[{&quot;trigger&quot;:&quot;axis&quot;,&quot;z&quot;:60,&quot;show&quot;:true,&quot;showContent&quot;:true,&quot;triggerOn&quot;:&quot;mousemove|click&quot;,&quot;alwaysShowContent&quot;:false,&quot;displayMode&quot;:&quot;single&quot;,&quot;renderMode&quot;:&quot;auto&quot;,&quot;confine&quot;:null,&quot;showDelay&quot;:0,&quot;hideDelay&quot;:100,&quot;transitionDuration&quot;:0.4,&quot;enterable&quot;:false,&quot;backgroundColor&quot;:&quot;#fff&quot;,&quot;shadowBlur&quot;:10,&quot;shadowColor&quot;:&quot;rgba(0, 0, 0, .2)&quot;,&quot;shadowOffsetX&quot;:1,&quot;shadowOffsetY&quot;:2,&quot;borderRadius&quot;:4,&quot;borderWidth&quot;:1,&quot;padding&quot;:null,&quot;extraCssText&quot;:&quot;&quot;,&quot;axisPointer&quot;:{&quot;type&quot;:&quot;line&quot;,&quot;axis&quot;:&quot;auto&quot;,&quot;animation&quot;:&quot;auto&quot;,&quot;animationDurationUpdate&quot;:200,&quot;animationEasingUpdate&quot;:&quot;exponentialOut&quot;,&quot;crossStyle&quot;:{&quot;color&quot;:&quot;#999&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;dashed&quot;,&quot;textStyle&quot;:{}}},&quot;textStyle&quot;:{&quot;color&quot;:&quot;#666&quot;,&quot;fontSize&quot;:14}}],&quot;yAxis&quot;:[{&quot;splitLine&quot;:{&quot;lineStyle&quot;:{&quot;color&quot;:&quot;rgba(0,0,0,0.1)&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;show&quot;:true},&quot;axisLabel&quot;:{&quot;color&quot;:&quot;#334155&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;rotate&quot;:0,&quot;showMinLabel&quot;:null,&quot;showMaxLabel&quot;:null,&quot;margin&quot;:8,&quot;fontSize&quot;:12},&quot;min&quot;:80,&quot;max&quot;:95,&quot;boundaryGap&quot;:[0,0],&quot;axisLine&quot;:{&quot;show&quot;:&quot;auto&quot;,&quot;onZero&quot;:true,&quot;onZeroAxisIndex&quot;:null,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#6E7079&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;symbol&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;symbolSize&quot;:[10,15]},&quot;axisTick&quot;:{&quot;show&quot;:&quot;auto&quot;,&quot;inside&quot;:false,&quot;length&quot;:5,&quot;lineStyle&quot;:{&quot;width&quot;:1}},&quot;splitNumber&quot;:5,&quot;minorTick&quot;:{&quot;show&quot;:false,&quot;splitNumber&quot;:5,&quot;length&quot;:3,&quot;lineStyle&quot;:{}},&quot;minorSplitLine&quot;:{&quot;show&quot;:false,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#F4F7FD&quot;,&quot;width&quot;:1}},&quot;show&quot;:true,&quot;z&quot;:0,&quot;inverse&quot;:false,&quot;name&quot;:&quot;&quot;,&quot;nameLocation&quot;:&quot;end&quot;,&quot;nameRotate&quot;:null,&quot;nameTruncate&quot;:{&quot;maxWidth&quot;:null,&quot;ellipsis&quot;:&quot;...&quot;,&quot;placeholder&quot;:&quot;.&quot;},&quot;nameTextStyle&quot;:{},&quot;nameGap&quot;:15,&quot;silent&quot;:false,&quot;triggerEvent&quot;:false,&quot;tooltip&quot;:{&quot;show&quot;:false},&quot;axisPointer&quot;:{},&quot;splitArea&quot;:{&quot;show&quot;:false,&quot;areaStyle&quot;:{&quot;color&quot;:[&quot;rgba(250,250,250,0.2)&quot;,&quot;rgba(210,219,238,0.2)&quot;]}},&quot;offset&quot;:0,&quot;type&quot;:&quot;value&quot;}],&quot;xAxis&quot;:[{&quot;axisLine&quot;:{&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#94a3b8&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;show&quot;:true,&quot;onZero&quot;:true,&quot;onZeroAxisIndex&quot;:null,&quot;symbol&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;symbolSize&quot;:[10,15]},&quot;axisLabel&quot;:{&quot;interval&quot;:0,&quot;rotate&quot;:0,&quot;fontSize&quot;:14,&quot;fontWeight&quot;:&quot;bold&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;showMinLabel&quot;:null,&quot;showMaxLabel&quot;:null,&quot;margin&quot;:8},&quot;data&quot;:[&quot;眼科&quot;,&quot;神經外科&quot;,&quot;一般及\n消化系外科&quot;],&quot;boundaryGap&quot;:true,&quot;deduplication&quot;:null,&quot;splitLine&quot;:{&quot;show&quot;:false,&quot;lineStyle&quot;:{&quot;color&quot;:[&quot;#E0E6F1&quot;],&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;}},&quot;axisTick&quot;:{&quot;alignWithLabel&quot;:false,&quot;interval&quot;:&quot;auto&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;length&quot;:5,&quot;lineStyle&quot;:{&quot;width&quot;:1}},&quot;show&quot;:true,&quot;z&quot;:0,&quot;inverse&quot;:false,&quot;name&quot;:&quot;&quot;,&quot;nameLocation&quot;:&quot;end&quot;,&quot;nameRotate&quot;:null,&quot;nameTruncate&quot;:{&quot;maxWidth&quot;:null,&quot;ellipsis&quot;:&quot;...&quot;,&quot;placeholder&quot;:&quot;.&quot;},&quot;nameTextStyle&quot;:{},&quot;nameGap&quot;:15,&quot;silent&quot;:false,&quot;triggerEvent&quot;:false,&quot;tooltip&quot;:{&quot;show&quot;:false},&quot;axisPointer&quot;:{&quot;status&quot;:&quot;hide&quot;,&quot;value&quot;:2,&quot;seriesDataIndices&quot;:[{&quot;seriesIndex&quot;:0,&quot;dataIndexInside&quot;:2,&quot;dataIndex&quot;:2}]},&quot;splitArea&quot;:{&quot;show&quot;:false,&quot;areaStyle&quot;:{&quot;color&quot;:[&quot;rgba(250,250,250,0.2)&quot;,&quot;rgba(210,219,238,0.2)&quot;]}},&quot;offset&quot;:0,&quot;type&quot;:&quot;category&quot;}],&quot;grid&quot;:[{&quot;containLabel&quot;:true,&quot;left&quot;:&quot;5%&quot;,&quot;right&quot;:&quot;5%&quot;,&quot;bottom&quot;:&quot;5%&quot;,&quot;top&quot;:&quot;15%&quot;,&quot;show&quot;:false,&quot;z&quot;:0,&quot;backgroundColor&quot;:&quot;rgba(0,0,0,0)&quot;,&quot;borderWidth&quot;:1,&quot;borderColor&quot;:&quot;#ccc&quot;}],&quot;series&quot;:[{&quot;name&quot;:&quot;分數&quot;,&quot;type&quot;:&quot;bar&quot;,&quot;data&quot;:[89.76,88.39,88.23],&quot;itemStyle&quot;:{&quot;color&quot;:&quot;#10b981&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;position&quot;:&quot;top&quot;,&quot;color&quot;:&quot;#334155&quot;,&quot;fontSize&quot;:16,&quot;fontWeight&quot;:&quot;bold&quot;},&quot;markLine&quot;:{&quot;data&quot;:[{&quot;yAxis&quot;:87.11,&quot;name&quot;:&quot;外科系平均 87.11&quot;,&quot;label&quot;:{},&quot;emphasis&quot;:{&quot;label&quot;:{}}}],&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#ef4444&quot;,&quot;width&quot;:3,&quot;type&quot;:&quot;solid&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;position&quot;:&quot;end&quot;,&quot;formatter&quot;:&quot;平均: {c}&quot;,&quot;color&quot;:&quot;#ef4444&quot;,&quot;fontSize&quot;:14,&quot;fontWeight&quot;:&quot;bold&quot;},&quot;emphasis&quot;:{&quot;label&quot;:{&quot;show&quot;:true}}},&quot;z&quot;:2,&quot;coordinateSystem&quot;:&quot;cartesian2d&quot;,&quot;legendHoverLink&quot;:true,&quot;barMinHeight&quot;:0,&quot;barMinAngle&quot;:0,&quot;large&quot;:false,&quot;largeThreshold&quot;:400,&quot;progressive&quot;:3000,&quot;progressiveChunkMode&quot;:&quot;mod&quot;,&quot;clip&quot;:true,&quot;roundCap&quot;:false,&quot;showBackground&quot;:false,&quot;backgroundStyle&quot;:{&quot;color&quot;:&quot;rgba(180, 180, 180, 0.2)&quot;,&quot;borderColor&quot;:null,&quot;borderWidth&quot;:0,&quot;borderType&quot;:&quot;solid&quot;,&quot;borderRadius&quot;:0,&quot;shadowBlur&quot;:0,&quot;shadowColor&quot;:null,&quot;shadowOffsetX&quot;:0,&quot;shadowOffsetY&quot;:0,&quot;opacity&quot;:1},&quot;select&quot;:{&quot;itemStyle&quot;:{&quot;borderColor&quot;:&quot;#212121&quot;}},&quot;realtimeSort&quot;:false,&quot;emphasis&quot;:{&quot;label&quot;:{&quot;show&quot;:true}}}],&quot;visualMap&quot;:[],&quot;legend&quot;:[],&quot;markArea&quot;:[],&quot;markLine&quot;:[{&quot;z&quot;:5,&quot;symbol&quot;:[&quot;circle&quot;,&quot;arrow&quot;],&quot;symbolSize&quot;:[8,16],&quot;symbolOffset&quot;:0,&quot;precision&quot;:2,&quot;tooltip&quot;:{&quot;trigger&quot;:&quot;item&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;position&quot;:&quot;end&quot;,&quot;distance&quot;:5},&quot;lineStyle&quot;:{&quot;type&quot;:&quot;dashed&quot;},&quot;emphasis&quot;:{&quot;label&quot;:{&quot;show&quot;:true},&quot;lineStyle&quot;:{&quot;width&quot;:3}},&quot;animationEasing&quot;:&quot;linear&quot;}],&quot;markPoint&quot;:[],&quot;brush&quot;:[],&quot;dataZoom&quot;:[]}"><div style="position: relative; width: 472px; height: 450px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="590" height="562" style="position: absolute; left: 0px; top: 0px; width: 472px; height: 450px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class="" style="position: absolute; display: block; border-style: solid; white-space: nowrap; z-index: 9999999; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 10px; transition: opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1), visibility 0.2s cubic-bezier(0.23, 1, 0.32, 1); background-color: rgb(255, 255, 255); border-width: 1px; border-radius: 4px; color: rgb(102, 102, 102); font: 14px / 21px &quot;Noto Sans TC&quot;; padding: 10px; top: 0px; left: 0px; transform: translate3d(245px, 292px, 0px); border-color: rgb(255, 255, 255); pointer-events: none; visibility: hidden; opacity: 0;"><div style="margin: 0px 0 0;line-height:1;"><div style="margin: 0px 0 0;line-height:1;"><div style="font-size:14px;color:#666;font-weight:400;line-height:1;">一般及
+消化系外科</div><div style="margin: 10px 0 0;line-height:1;"><div style="margin: 0px 0 0;line-height:1;"><div style="margin: 0px 0 0;line-height:1;"><span style="display:inline-block;margin-right:4px;border-radius:10px;width:10px;height:10px;background-color:#10b981;"></span><span style="font-size:14px;color:#666;font-weight:400;margin-left:2px">分數</span><span style="float:right;margin-left:20px;font-size:14px;color:#666;font-weight:900">88.23</span><div style="clear:both"></div></div><div style="clear:both"></div></div><div style="clear:both"></div></div><div style="clear:both"></div></div><div style="clear:both"></div></div></div></div>
+                    <div class="mt-4 p-4 bg-slate-50 dark:bg-slate-700/50 rounded-lg">
+                        <p class="text-2xl font-bold text-slate-800 dark:text-white text-center">
+                            (外科系)總成績優良前三名：
+                        </p>
+                        <p class="text-xl text-center mt-2 text-emerald-600 dark:text-emerald-300 font-semibold">
+                            眼科、神經外科、一般及消化系外科
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: 自審科部評比 -->
+        <section class="slide-section">
+            <h2 class="text-4xl font-black text-center mb-10">114-Q3自審科部病歷書寫評比</h2>
+            <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg w-full max-w-4xl mx-auto">
+                <div id="chart-self-review" class="chart-container h-[500px]" _echarts_instance_="ec_1764843126354" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;" data-chart-option="{&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;textStyle&quot;:{&quot;fontFamily&quot;:&quot;Noto Sans TC&quot;,&quot;fontSize&quot;:12,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;fontWeight&quot;:&quot;normal&quot;},&quot;darkMode&quot;:&quot;auto&quot;,&quot;colorBy&quot;:&quot;series&quot;,&quot;color&quot;:[&quot;#5470c6&quot;,&quot;#91cc75&quot;,&quot;#fac858&quot;,&quot;#ee6666&quot;,&quot;#73c0de&quot;,&quot;#3ba272&quot;,&quot;#fc8452&quot;,&quot;#9a60b4&quot;,&quot;#ea7ccc&quot;],&quot;gradientColor&quot;:[&quot;#f6efa6&quot;,&quot;#d88273&quot;,&quot;#bf444c&quot;],&quot;aria&quot;:{&quot;decal&quot;:{&quot;decals&quot;:[{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[1,0],&quot;dashArrayY&quot;:[2,5],&quot;symbolSize&quot;:1,&quot;rotation&quot;:0.5235987755982988},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;symbol&quot;:&quot;circle&quot;,&quot;dashArrayX&quot;:[[8,8],[0,8,8,0]],&quot;dashArrayY&quot;:[6,0],&quot;symbolSize&quot;:0.8},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[1,0],&quot;dashArrayY&quot;:[4,3],&quot;rotation&quot;:-0.7853981633974483},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[[6,6],[0,6,6,0]],&quot;dashArrayY&quot;:[6,0]},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[[1,0],[1,6]],&quot;dashArrayY&quot;:[1,0,6,0],&quot;rotation&quot;:0.7853981633974483},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;symbol&quot;:&quot;triangle&quot;,&quot;dashArrayX&quot;:[[9,9],[0,9,9,0]],&quot;dashArrayY&quot;:[7,2],&quot;symbolSize&quot;:0.75}]}},&quot;stateAnimation&quot;:{&quot;duration&quot;:300,&quot;easing&quot;:&quot;cubicOut&quot;},&quot;animation&quot;:&quot;auto&quot;,&quot;animationDuration&quot;:1000,&quot;animationDurationUpdate&quot;:500,&quot;animationEasing&quot;:&quot;cubicInOut&quot;,&quot;animationEasingUpdate&quot;:&quot;cubicInOut&quot;,&quot;animationThreshold&quot;:2000,&quot;progressiveThreshold&quot;:3000,&quot;progressive&quot;:400,&quot;hoverLayerThreshold&quot;:3000,&quot;useUTC&quot;:false,&quot;axisPointer&quot;:[{&quot;show&quot;:&quot;auto&quot;,&quot;z&quot;:50,&quot;type&quot;:&quot;line&quot;,&quot;snap&quot;:false,&quot;triggerTooltip&quot;:true,&quot;triggerEmphasis&quot;:true,&quot;value&quot;:null,&quot;status&quot;:null,&quot;link&quot;:[],&quot;animation&quot;:null,&quot;animationDurationUpdate&quot;:200,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#B9BEC9&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;dashed&quot;},&quot;shadowStyle&quot;:{&quot;color&quot;:&quot;rgba(210,219,238,0.2)&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;formatter&quot;:null,&quot;precision&quot;:&quot;auto&quot;,&quot;margin&quot;:3,&quot;color&quot;:&quot;#fff&quot;,&quot;padding&quot;:[5,7,5,7],&quot;backgroundColor&quot;:&quot;auto&quot;,&quot;borderColor&quot;:null,&quot;borderWidth&quot;:0,&quot;borderRadius&quot;:3},&quot;handle&quot;:{&quot;show&quot;:false,&quot;icon&quot;:&quot;M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4h1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7v-1.2h6.6z M13.3,22H6.7v-1.2h6.6z M13.3,19.6H6.7v-1.2h6.6z&quot;,&quot;size&quot;:45,&quot;margin&quot;:50,&quot;color&quot;:&quot;#333&quot;,&quot;shadowBlur&quot;:3,&quot;shadowColor&quot;:&quot;#aaa&quot;,&quot;shadowOffsetX&quot;:0,&quot;shadowOffsetY&quot;:2,&quot;throttle&quot;:40}}],&quot;tooltip&quot;:[{&quot;trigger&quot;:&quot;axis&quot;,&quot;z&quot;:60,&quot;show&quot;:true,&quot;showContent&quot;:true,&quot;triggerOn&quot;:&quot;mousemove|click&quot;,&quot;alwaysShowContent&quot;:false,&quot;displayMode&quot;:&quot;single&quot;,&quot;renderMode&quot;:&quot;auto&quot;,&quot;confine&quot;:null,&quot;showDelay&quot;:0,&quot;hideDelay&quot;:100,&quot;transitionDuration&quot;:0.4,&quot;enterable&quot;:false,&quot;backgroundColor&quot;:&quot;#fff&quot;,&quot;shadowBlur&quot;:10,&quot;shadowColor&quot;:&quot;rgba(0, 0, 0, .2)&quot;,&quot;shadowOffsetX&quot;:1,&quot;shadowOffsetY&quot;:2,&quot;borderRadius&quot;:4,&quot;borderWidth&quot;:1,&quot;padding&quot;:null,&quot;extraCssText&quot;:&quot;&quot;,&quot;axisPointer&quot;:{&quot;type&quot;:&quot;line&quot;,&quot;axis&quot;:&quot;auto&quot;,&quot;animation&quot;:&quot;auto&quot;,&quot;animationDurationUpdate&quot;:200,&quot;animationEasingUpdate&quot;:&quot;exponentialOut&quot;,&quot;crossStyle&quot;:{&quot;color&quot;:&quot;#999&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;dashed&quot;,&quot;textStyle&quot;:{}}},&quot;textStyle&quot;:{&quot;color&quot;:&quot;#666&quot;,&quot;fontSize&quot;:14}}],&quot;yAxis&quot;:[{&quot;splitLine&quot;:{&quot;lineStyle&quot;:{&quot;color&quot;:&quot;rgba(0,0,0,0.1)&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;show&quot;:true},&quot;axisLabel&quot;:{&quot;color&quot;:&quot;#334155&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;rotate&quot;:0,&quot;showMinLabel&quot;:null,&quot;showMaxLabel&quot;:null,&quot;margin&quot;:8,&quot;fontSize&quot;:12},&quot;min&quot;:80,&quot;boundaryGap&quot;:[0,0],&quot;axisLine&quot;:{&quot;show&quot;:&quot;auto&quot;,&quot;onZero&quot;:true,&quot;onZeroAxisIndex&quot;:null,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#6E7079&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;symbol&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;symbolSize&quot;:[10,15]},&quot;axisTick&quot;:{&quot;show&quot;:&quot;auto&quot;,&quot;inside&quot;:false,&quot;length&quot;:5,&quot;lineStyle&quot;:{&quot;width&quot;:1}},&quot;splitNumber&quot;:5,&quot;minorTick&quot;:{&quot;show&quot;:false,&quot;splitNumber&quot;:5,&quot;length&quot;:3,&quot;lineStyle&quot;:{}},&quot;minorSplitLine&quot;:{&quot;show&quot;:false,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#F4F7FD&quot;,&quot;width&quot;:1}},&quot;show&quot;:true,&quot;z&quot;:0,&quot;inverse&quot;:false,&quot;name&quot;:&quot;&quot;,&quot;nameLocation&quot;:&quot;end&quot;,&quot;nameRotate&quot;:null,&quot;nameTruncate&quot;:{&quot;maxWidth&quot;:null,&quot;ellipsis&quot;:&quot;...&quot;,&quot;placeholder&quot;:&quot;.&quot;},&quot;nameTextStyle&quot;:{},&quot;nameGap&quot;:15,&quot;silent&quot;:false,&quot;triggerEvent&quot;:false,&quot;tooltip&quot;:{&quot;show&quot;:false},&quot;axisPointer&quot;:{},&quot;splitArea&quot;:{&quot;show&quot;:false,&quot;areaStyle&quot;:{&quot;color&quot;:[&quot;rgba(250,250,250,0.2)&quot;,&quot;rgba(210,219,238,0.2)&quot;]}},&quot;offset&quot;:0,&quot;type&quot;:&quot;value&quot;}],&quot;xAxis&quot;:[{&quot;axisLine&quot;:{&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#94a3b8&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;show&quot;:true,&quot;onZero&quot;:true,&quot;onZeroAxisIndex&quot;:null,&quot;symbol&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;symbolSize&quot;:[10,15]},&quot;axisLabel&quot;:{&quot;interval&quot;:0,&quot;fontSize&quot;:14,&quot;fontWeight&quot;:&quot;bold&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;rotate&quot;:0,&quot;showMinLabel&quot;:null,&quot;showMaxLabel&quot;:null,&quot;margin&quot;:8},&quot;data&quot;:[&quot;加護醫學部&quot;,&quot;精神醫學部&quot;,&quot;兒科部&quot;,&quot;婦產部&quot;,&quot;急診醫學部&quot;],&quot;boundaryGap&quot;:true,&quot;deduplication&quot;:null,&quot;splitLine&quot;:{&quot;show&quot;:false,&quot;lineStyle&quot;:{&quot;color&quot;:[&quot;#E0E6F1&quot;],&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;}},&quot;axisTick&quot;:{&quot;alignWithLabel&quot;:false,&quot;interval&quot;:&quot;auto&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;length&quot;:5,&quot;lineStyle&quot;:{&quot;width&quot;:1}},&quot;show&quot;:true,&quot;z&quot;:0,&quot;inverse&quot;:false,&quot;name&quot;:&quot;&quot;,&quot;nameLocation&quot;:&quot;end&quot;,&quot;nameRotate&quot;:null,&quot;nameTruncate&quot;:{&quot;maxWidth&quot;:null,&quot;ellipsis&quot;:&quot;...&quot;,&quot;placeholder&quot;:&quot;.&quot;},&quot;nameTextStyle&quot;:{},&quot;nameGap&quot;:15,&quot;silent&quot;:false,&quot;triggerEvent&quot;:false,&quot;tooltip&quot;:{&quot;show&quot;:false},&quot;axisPointer&quot;:{&quot;status&quot;:&quot;hide&quot;,&quot;value&quot;:4},&quot;splitArea&quot;:{&quot;show&quot;:false,&quot;areaStyle&quot;:{&quot;color&quot;:[&quot;rgba(250,250,250,0.2)&quot;,&quot;rgba(210,219,238,0.2)&quot;]}},&quot;offset&quot;:0,&quot;type&quot;:&quot;category&quot;}],&quot;grid&quot;:[{&quot;containLabel&quot;:true,&quot;left&quot;:&quot;5%&quot;,&quot;right&quot;:&quot;5%&quot;,&quot;bottom&quot;:&quot;5%&quot;,&quot;top&quot;:&quot;15%&quot;,&quot;show&quot;:false,&quot;z&quot;:0,&quot;backgroundColor&quot;:&quot;rgba(0,0,0,0)&quot;,&quot;borderWidth&quot;:1,&quot;borderColor&quot;:&quot;#ccc&quot;}],&quot;series&quot;:[{&quot;type&quot;:&quot;bar&quot;,&quot;data&quot;:[90.3,90.17,88.87,87.24,86.05],&quot;itemStyle&quot;:{&quot;color&quot;:{&quot;colorStops&quot;:[{&quot;offset&quot;:0,&quot;color&quot;:&quot;#6366f1&quot;},{&quot;offset&quot;:1,&quot;color&quot;:&quot;#4338ca&quot;}],&quot;x&quot;:0,&quot;y&quot;:0,&quot;x2&quot;:0,&quot;y2&quot;:1,&quot;type&quot;:&quot;linear&quot;,&quot;global&quot;:false}},&quot;label&quot;:{&quot;show&quot;:true,&quot;position&quot;:&quot;top&quot;,&quot;color&quot;:&quot;#334155&quot;,&quot;fontSize&quot;:18,&quot;fontWeight&quot;:&quot;bold&quot;},&quot;z&quot;:2,&quot;coordinateSystem&quot;:&quot;cartesian2d&quot;,&quot;legendHoverLink&quot;:true,&quot;barMinHeight&quot;:0,&quot;barMinAngle&quot;:0,&quot;large&quot;:false,&quot;largeThreshold&quot;:400,&quot;progressive&quot;:3000,&quot;progressiveChunkMode&quot;:&quot;mod&quot;,&quot;clip&quot;:true,&quot;roundCap&quot;:false,&quot;showBackground&quot;:false,&quot;backgroundStyle&quot;:{&quot;color&quot;:&quot;rgba(180, 180, 180, 0.2)&quot;,&quot;borderColor&quot;:null,&quot;borderWidth&quot;:0,&quot;borderType&quot;:&quot;solid&quot;,&quot;borderRadius&quot;:0,&quot;shadowBlur&quot;:0,&quot;shadowColor&quot;:null,&quot;shadowOffsetX&quot;:0,&quot;shadowOffsetY&quot;:0,&quot;opacity&quot;:1},&quot;select&quot;:{&quot;itemStyle&quot;:{&quot;borderColor&quot;:&quot;#212121&quot;}},&quot;realtimeSort&quot;:false,&quot;emphasis&quot;:{&quot;label&quot;:{&quot;show&quot;:true}}}],&quot;visualMap&quot;:[],&quot;legend&quot;:[],&quot;markArea&quot;:[],&quot;markLine&quot;:[],&quot;markPoint&quot;:[],&quot;brush&quot;:[],&quot;dataZoom&quot;:[]}"><div style="position: relative; width: 832px; height: 500px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="1040" height="625" style="position: absolute; left: 0px; top: 0px; width: 832px; height: 500px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div>
+            </div>
+        </section>
+
+        <!-- Slide 5: 病歷指導優良評比排名 -->
+        <section class="slide-section">
+            <h2 class="text-4xl font-black text-center mb-10">內/外科系病歷指導優良評比排名</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
+                <!-- 內科系指導 Chart -->
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg">
+                    <div id="chart-internal-guide" class="chart-container" _echarts_instance_="ec_1764843126355" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;" data-chart-option="{&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;textStyle&quot;:{&quot;fontFamily&quot;:&quot;Noto Sans TC&quot;,&quot;fontSize&quot;:12,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;fontWeight&quot;:&quot;normal&quot;},&quot;darkMode&quot;:&quot;auto&quot;,&quot;colorBy&quot;:&quot;series&quot;,&quot;color&quot;:[&quot;#5470c6&quot;,&quot;#91cc75&quot;,&quot;#fac858&quot;,&quot;#ee6666&quot;,&quot;#73c0de&quot;,&quot;#3ba272&quot;,&quot;#fc8452&quot;,&quot;#9a60b4&quot;,&quot;#ea7ccc&quot;],&quot;gradientColor&quot;:[&quot;#f6efa6&quot;,&quot;#d88273&quot;,&quot;#bf444c&quot;],&quot;aria&quot;:{&quot;decal&quot;:{&quot;decals&quot;:[{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[1,0],&quot;dashArrayY&quot;:[2,5],&quot;symbolSize&quot;:1,&quot;rotation&quot;:0.5235987755982988},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;symbol&quot;:&quot;circle&quot;,&quot;dashArrayX&quot;:[[8,8],[0,8,8,0]],&quot;dashArrayY&quot;:[6,0],&quot;symbolSize&quot;:0.8},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[1,0],&quot;dashArrayY&quot;:[4,3],&quot;rotation&quot;:-0.7853981633974483},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[[6,6],[0,6,6,0]],&quot;dashArrayY&quot;:[6,0]},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[[1,0],[1,6]],&quot;dashArrayY&quot;:[1,0,6,0],&quot;rotation&quot;:0.7853981633974483},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;symbol&quot;:&quot;triangle&quot;,&quot;dashArrayX&quot;:[[9,9],[0,9,9,0]],&quot;dashArrayY&quot;:[7,2],&quot;symbolSize&quot;:0.75}]}},&quot;stateAnimation&quot;:{&quot;duration&quot;:300,&quot;easing&quot;:&quot;cubicOut&quot;},&quot;animation&quot;:&quot;auto&quot;,&quot;animationDuration&quot;:1000,&quot;animationDurationUpdate&quot;:500,&quot;animationEasing&quot;:&quot;cubicInOut&quot;,&quot;animationEasingUpdate&quot;:&quot;cubicInOut&quot;,&quot;animationThreshold&quot;:2000,&quot;progressiveThreshold&quot;:3000,&quot;progressive&quot;:400,&quot;hoverLayerThreshold&quot;:3000,&quot;useUTC&quot;:false,&quot;axisPointer&quot;:[{&quot;show&quot;:&quot;auto&quot;,&quot;z&quot;:50,&quot;type&quot;:&quot;line&quot;,&quot;snap&quot;:false,&quot;triggerTooltip&quot;:true,&quot;triggerEmphasis&quot;:true,&quot;value&quot;:null,&quot;status&quot;:null,&quot;link&quot;:[],&quot;animation&quot;:null,&quot;animationDurationUpdate&quot;:200,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#B9BEC9&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;dashed&quot;},&quot;shadowStyle&quot;:{&quot;color&quot;:&quot;rgba(210,219,238,0.2)&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;formatter&quot;:null,&quot;precision&quot;:&quot;auto&quot;,&quot;margin&quot;:3,&quot;color&quot;:&quot;#fff&quot;,&quot;padding&quot;:[5,7,5,7],&quot;backgroundColor&quot;:&quot;auto&quot;,&quot;borderColor&quot;:null,&quot;borderWidth&quot;:0,&quot;borderRadius&quot;:3},&quot;handle&quot;:{&quot;show&quot;:false,&quot;icon&quot;:&quot;M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4h1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7v-1.2h6.6z M13.3,22H6.7v-1.2h6.6z M13.3,19.6H6.7v-1.2h6.6z&quot;,&quot;size&quot;:45,&quot;margin&quot;:50,&quot;color&quot;:&quot;#333&quot;,&quot;shadowBlur&quot;:3,&quot;shadowColor&quot;:&quot;#aaa&quot;,&quot;shadowOffsetX&quot;:0,&quot;shadowOffsetY&quot;:2,&quot;throttle&quot;:40}}],&quot;tooltip&quot;:[{&quot;trigger&quot;:&quot;axis&quot;,&quot;z&quot;:60,&quot;show&quot;:true,&quot;showContent&quot;:true,&quot;triggerOn&quot;:&quot;mousemove|click&quot;,&quot;alwaysShowContent&quot;:false,&quot;displayMode&quot;:&quot;single&quot;,&quot;renderMode&quot;:&quot;auto&quot;,&quot;confine&quot;:null,&quot;showDelay&quot;:0,&quot;hideDelay&quot;:100,&quot;transitionDuration&quot;:0.4,&quot;enterable&quot;:false,&quot;backgroundColor&quot;:&quot;#fff&quot;,&quot;shadowBlur&quot;:10,&quot;shadowColor&quot;:&quot;rgba(0, 0, 0, .2)&quot;,&quot;shadowOffsetX&quot;:1,&quot;shadowOffsetY&quot;:2,&quot;borderRadius&quot;:4,&quot;borderWidth&quot;:1,&quot;padding&quot;:null,&quot;extraCssText&quot;:&quot;&quot;,&quot;axisPointer&quot;:{&quot;type&quot;:&quot;line&quot;,&quot;axis&quot;:&quot;auto&quot;,&quot;animation&quot;:&quot;auto&quot;,&quot;animationDurationUpdate&quot;:200,&quot;animationEasingUpdate&quot;:&quot;exponentialOut&quot;,&quot;crossStyle&quot;:{&quot;color&quot;:&quot;#999&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;dashed&quot;,&quot;textStyle&quot;:{}}},&quot;textStyle&quot;:{&quot;color&quot;:&quot;#666&quot;,&quot;fontSize&quot;:14}}],&quot;yAxis&quot;:[{&quot;splitLine&quot;:{&quot;lineStyle&quot;:{&quot;color&quot;:&quot;rgba(0,0,0,0.1)&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;show&quot;:true},&quot;axisLabel&quot;:{&quot;color&quot;:&quot;#334155&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;rotate&quot;:0,&quot;showMinLabel&quot;:null,&quot;showMaxLabel&quot;:null,&quot;margin&quot;:8,&quot;fontSize&quot;:12},&quot;min&quot;:85,&quot;max&quot;:92,&quot;boundaryGap&quot;:[0,0],&quot;axisLine&quot;:{&quot;show&quot;:&quot;auto&quot;,&quot;onZero&quot;:true,&quot;onZeroAxisIndex&quot;:null,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#6E7079&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;symbol&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;symbolSize&quot;:[10,15]},&quot;axisTick&quot;:{&quot;show&quot;:&quot;auto&quot;,&quot;inside&quot;:false,&quot;length&quot;:5,&quot;lineStyle&quot;:{&quot;width&quot;:1}},&quot;splitNumber&quot;:5,&quot;minorTick&quot;:{&quot;show&quot;:false,&quot;splitNumber&quot;:5,&quot;length&quot;:3,&quot;lineStyle&quot;:{}},&quot;minorSplitLine&quot;:{&quot;show&quot;:false,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#F4F7FD&quot;,&quot;width&quot;:1}},&quot;show&quot;:true,&quot;z&quot;:0,&quot;inverse&quot;:false,&quot;name&quot;:&quot;&quot;,&quot;nameLocation&quot;:&quot;end&quot;,&quot;nameRotate&quot;:null,&quot;nameTruncate&quot;:{&quot;maxWidth&quot;:null,&quot;ellipsis&quot;:&quot;...&quot;,&quot;placeholder&quot;:&quot;.&quot;},&quot;nameTextStyle&quot;:{},&quot;nameGap&quot;:15,&quot;silent&quot;:false,&quot;triggerEvent&quot;:false,&quot;tooltip&quot;:{&quot;show&quot;:false},&quot;axisPointer&quot;:{},&quot;splitArea&quot;:{&quot;show&quot;:false,&quot;areaStyle&quot;:{&quot;color&quot;:[&quot;rgba(250,250,250,0.2)&quot;,&quot;rgba(210,219,238,0.2)&quot;]}},&quot;offset&quot;:0,&quot;type&quot;:&quot;value&quot;}],&quot;xAxis&quot;:[{&quot;axisLine&quot;:{&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#94a3b8&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;show&quot;:true,&quot;onZero&quot;:true,&quot;onZeroAxisIndex&quot;:null,&quot;symbol&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;symbolSize&quot;:[10,15]},&quot;axisLabel&quot;:{&quot;interval&quot;:0,&quot;fontSize&quot;:14,&quot;fontWeight&quot;:&quot;bold&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;rotate&quot;:0,&quot;showMinLabel&quot;:null,&quot;showMaxLabel&quot;:null,&quot;margin&quot;:8},&quot;data&quot;:[&quot;內分泌\n新陳代謝科&quot;,&quot;精神醫學部&quot;,&quot;血液腫瘤科&quot;],&quot;boundaryGap&quot;:true,&quot;deduplication&quot;:null,&quot;splitLine&quot;:{&quot;show&quot;:false,&quot;lineStyle&quot;:{&quot;color&quot;:[&quot;#E0E6F1&quot;],&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;}},&quot;axisTick&quot;:{&quot;alignWithLabel&quot;:false,&quot;interval&quot;:&quot;auto&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;length&quot;:5,&quot;lineStyle&quot;:{&quot;width&quot;:1}},&quot;show&quot;:true,&quot;z&quot;:0,&quot;inverse&quot;:false,&quot;name&quot;:&quot;&quot;,&quot;nameLocation&quot;:&quot;end&quot;,&quot;nameRotate&quot;:null,&quot;nameTruncate&quot;:{&quot;maxWidth&quot;:null,&quot;ellipsis&quot;:&quot;...&quot;,&quot;placeholder&quot;:&quot;.&quot;},&quot;nameTextStyle&quot;:{},&quot;nameGap&quot;:15,&quot;silent&quot;:false,&quot;triggerEvent&quot;:false,&quot;tooltip&quot;:{&quot;show&quot;:false},&quot;axisPointer&quot;:{&quot;status&quot;:&quot;hide&quot;,&quot;value&quot;:1,&quot;seriesDataIndices&quot;:[{&quot;seriesIndex&quot;:0,&quot;dataIndexInside&quot;:1,&quot;dataIndex&quot;:1}]},&quot;splitArea&quot;:{&quot;show&quot;:false,&quot;areaStyle&quot;:{&quot;color&quot;:[&quot;rgba(250,250,250,0.2)&quot;,&quot;rgba(210,219,238,0.2)&quot;]}},&quot;offset&quot;:0,&quot;type&quot;:&quot;category&quot;}],&quot;grid&quot;:[{&quot;containLabel&quot;:true,&quot;left&quot;:&quot;5%&quot;,&quot;right&quot;:&quot;5%&quot;,&quot;bottom&quot;:&quot;5%&quot;,&quot;top&quot;:&quot;15%&quot;,&quot;show&quot;:false,&quot;z&quot;:0,&quot;backgroundColor&quot;:&quot;rgba(0,0,0,0)&quot;,&quot;borderWidth&quot;:1,&quot;borderColor&quot;:&quot;#ccc&quot;}],&quot;series&quot;:[{&quot;type&quot;:&quot;bar&quot;,&quot;data&quot;:[89.5,89,89],&quot;itemStyle&quot;:{&quot;color&quot;:&quot;#3b82f6&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;position&quot;:&quot;top&quot;,&quot;color&quot;:&quot;#334155&quot;,&quot;fontSize&quot;:16,&quot;fontWeight&quot;:&quot;bold&quot;},&quot;z&quot;:2,&quot;coordinateSystem&quot;:&quot;cartesian2d&quot;,&quot;legendHoverLink&quot;:true,&quot;barMinHeight&quot;:0,&quot;barMinAngle&quot;:0,&quot;large&quot;:false,&quot;largeThreshold&quot;:400,&quot;progressive&quot;:3000,&quot;progressiveChunkMode&quot;:&quot;mod&quot;,&quot;clip&quot;:true,&quot;roundCap&quot;:false,&quot;showBackground&quot;:false,&quot;backgroundStyle&quot;:{&quot;color&quot;:&quot;rgba(180, 180, 180, 0.2)&quot;,&quot;borderColor&quot;:null,&quot;borderWidth&quot;:0,&quot;borderType&quot;:&quot;solid&quot;,&quot;borderRadius&quot;:0,&quot;shadowBlur&quot;:0,&quot;shadowColor&quot;:null,&quot;shadowOffsetX&quot;:0,&quot;shadowOffsetY&quot;:0,&quot;opacity&quot;:1},&quot;select&quot;:{&quot;itemStyle&quot;:{&quot;borderColor&quot;:&quot;#212121&quot;}},&quot;realtimeSort&quot;:false,&quot;emphasis&quot;:{&quot;label&quot;:{&quot;show&quot;:true}}}],&quot;visualMap&quot;:[],&quot;legend&quot;:[],&quot;markArea&quot;:[],&quot;markLine&quot;:[],&quot;markPoint&quot;:[],&quot;brush&quot;:[],&quot;dataZoom&quot;:[]}"><div style="position: relative; width: 472px; height: 450px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="590" height="562" style="position: absolute; left: 0px; top: 0px; width: 472px; height: 450px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class="" style="position: absolute; display: block; border-style: solid; white-space: nowrap; z-index: 9999999; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 10px; transition: opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1), visibility 0.2s cubic-bezier(0.23, 1, 0.32, 1), transform 0.4s cubic-bezier(0.23, 1, 0.32, 1); background-color: rgb(255, 255, 255); border-width: 1px; border-radius: 4px; color: rgb(102, 102, 102); font: 14px / 21px &quot;Noto Sans TC&quot;; padding: 10px; top: 0px; left: 0px; transform: translate3d(225px, 292px, 0px); border-color: rgb(255, 255, 255); pointer-events: none; visibility: hidden; opacity: 0;"><div style="margin: 0px 0 0;line-height:1;"><div style="margin: 0px 0 0;line-height:1;"><div style="font-size:14px;color:#666;font-weight:400;line-height:1;">精神醫學部</div><div style="margin: 10px 0 0;line-height:1;"><div style="margin: 0px 0 0;line-height:1;"><div style="margin: 0px 0 0;line-height:1;"><span style="display:inline-block;margin-right:4px;border-radius:10px;width:10px;height:10px;background-color:#3b82f6;"></span><span style="float:right;margin-left:10px;font-size:14px;color:#666;font-weight:900">89</span><div style="clear:both"></div></div><div style="clear:both"></div></div><div style="clear:both"></div></div><div style="clear:both"></div></div><div style="clear:both"></div></div></div></div>
+                    <div class="mt-4 p-4 bg-slate-50 dark:bg-slate-700/50 rounded-lg">
+                        <p class="text-2xl font-bold text-slate-800 dark:text-white text-center">
+                            (內科系)病歷指導優良前三名科別：
+                        </p>
+                        <p class="text-xl text-center mt-2 text-medical-600 dark:text-medical-300 font-semibold">
+                            內分泌新陳代謝科、精神醫學部、血液腫瘤科
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 外科系指導 Chart -->
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg">
+                    <div id="chart-surgical-guide" class="chart-container" _echarts_instance_="ec_1764843126356" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;" data-chart-option="{&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;textStyle&quot;:{&quot;fontFamily&quot;:&quot;Noto Sans TC&quot;,&quot;fontSize&quot;:12,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;fontWeight&quot;:&quot;normal&quot;},&quot;darkMode&quot;:&quot;auto&quot;,&quot;colorBy&quot;:&quot;series&quot;,&quot;color&quot;:[&quot;#5470c6&quot;,&quot;#91cc75&quot;,&quot;#fac858&quot;,&quot;#ee6666&quot;,&quot;#73c0de&quot;,&quot;#3ba272&quot;,&quot;#fc8452&quot;,&quot;#9a60b4&quot;,&quot;#ea7ccc&quot;],&quot;gradientColor&quot;:[&quot;#f6efa6&quot;,&quot;#d88273&quot;,&quot;#bf444c&quot;],&quot;aria&quot;:{&quot;decal&quot;:{&quot;decals&quot;:[{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[1,0],&quot;dashArrayY&quot;:[2,5],&quot;symbolSize&quot;:1,&quot;rotation&quot;:0.5235987755982988},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;symbol&quot;:&quot;circle&quot;,&quot;dashArrayX&quot;:[[8,8],[0,8,8,0]],&quot;dashArrayY&quot;:[6,0],&quot;symbolSize&quot;:0.8},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[1,0],&quot;dashArrayY&quot;:[4,3],&quot;rotation&quot;:-0.7853981633974483},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[[6,6],[0,6,6,0]],&quot;dashArrayY&quot;:[6,0]},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[[1,0],[1,6]],&quot;dashArrayY&quot;:[1,0,6,0],&quot;rotation&quot;:0.7853981633974483},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;symbol&quot;:&quot;triangle&quot;,&quot;dashArrayX&quot;:[[9,9],[0,9,9,0]],&quot;dashArrayY&quot;:[7,2],&quot;symbolSize&quot;:0.75}]}},&quot;stateAnimation&quot;:{&quot;duration&quot;:300,&quot;easing&quot;:&quot;cubicOut&quot;},&quot;animation&quot;:&quot;auto&quot;,&quot;animationDuration&quot;:1000,&quot;animationDurationUpdate&quot;:500,&quot;animationEasing&quot;:&quot;cubicInOut&quot;,&quot;animationEasingUpdate&quot;:&quot;cubicInOut&quot;,&quot;animationThreshold&quot;:2000,&quot;progressiveThreshold&quot;:3000,&quot;progressive&quot;:400,&quot;hoverLayerThreshold&quot;:3000,&quot;useUTC&quot;:false,&quot;axisPointer&quot;:[{&quot;show&quot;:&quot;auto&quot;,&quot;z&quot;:50,&quot;type&quot;:&quot;line&quot;,&quot;snap&quot;:false,&quot;triggerTooltip&quot;:true,&quot;triggerEmphasis&quot;:true,&quot;value&quot;:null,&quot;status&quot;:null,&quot;link&quot;:[],&quot;animation&quot;:null,&quot;animationDurationUpdate&quot;:200,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#B9BEC9&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;dashed&quot;},&quot;shadowStyle&quot;:{&quot;color&quot;:&quot;rgba(210,219,238,0.2)&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;formatter&quot;:null,&quot;precision&quot;:&quot;auto&quot;,&quot;margin&quot;:3,&quot;color&quot;:&quot;#fff&quot;,&quot;padding&quot;:[5,7,5,7],&quot;backgroundColor&quot;:&quot;auto&quot;,&quot;borderColor&quot;:null,&quot;borderWidth&quot;:0,&quot;borderRadius&quot;:3},&quot;handle&quot;:{&quot;show&quot;:false,&quot;icon&quot;:&quot;M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4h1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7v-1.2h6.6z M13.3,22H6.7v-1.2h6.6z M13.3,19.6H6.7v-1.2h6.6z&quot;,&quot;size&quot;:45,&quot;margin&quot;:50,&quot;color&quot;:&quot;#333&quot;,&quot;shadowBlur&quot;:3,&quot;shadowColor&quot;:&quot;#aaa&quot;,&quot;shadowOffsetX&quot;:0,&quot;shadowOffsetY&quot;:2,&quot;throttle&quot;:40}}],&quot;tooltip&quot;:[{&quot;trigger&quot;:&quot;axis&quot;,&quot;z&quot;:60,&quot;show&quot;:true,&quot;showContent&quot;:true,&quot;triggerOn&quot;:&quot;mousemove|click&quot;,&quot;alwaysShowContent&quot;:false,&quot;displayMode&quot;:&quot;single&quot;,&quot;renderMode&quot;:&quot;auto&quot;,&quot;confine&quot;:null,&quot;showDelay&quot;:0,&quot;hideDelay&quot;:100,&quot;transitionDuration&quot;:0.4,&quot;enterable&quot;:false,&quot;backgroundColor&quot;:&quot;#fff&quot;,&quot;shadowBlur&quot;:10,&quot;shadowColor&quot;:&quot;rgba(0, 0, 0, .2)&quot;,&quot;shadowOffsetX&quot;:1,&quot;shadowOffsetY&quot;:2,&quot;borderRadius&quot;:4,&quot;borderWidth&quot;:1,&quot;padding&quot;:null,&quot;extraCssText&quot;:&quot;&quot;,&quot;axisPointer&quot;:{&quot;type&quot;:&quot;line&quot;,&quot;axis&quot;:&quot;auto&quot;,&quot;animation&quot;:&quot;auto&quot;,&quot;animationDurationUpdate&quot;:200,&quot;animationEasingUpdate&quot;:&quot;exponentialOut&quot;,&quot;crossStyle&quot;:{&quot;color&quot;:&quot;#999&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;dashed&quot;,&quot;textStyle&quot;:{}}},&quot;textStyle&quot;:{&quot;color&quot;:&quot;#666&quot;,&quot;fontSize&quot;:14}}],&quot;yAxis&quot;:[{&quot;splitLine&quot;:{&quot;lineStyle&quot;:{&quot;color&quot;:&quot;rgba(0,0,0,0.1)&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;show&quot;:true},&quot;axisLabel&quot;:{&quot;color&quot;:&quot;#334155&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;rotate&quot;:0,&quot;showMinLabel&quot;:null,&quot;showMaxLabel&quot;:null,&quot;margin&quot;:8,&quot;fontSize&quot;:12},&quot;min&quot;:85,&quot;max&quot;:92,&quot;boundaryGap&quot;:[0,0],&quot;axisLine&quot;:{&quot;show&quot;:&quot;auto&quot;,&quot;onZero&quot;:true,&quot;onZeroAxisIndex&quot;:null,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#6E7079&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;symbol&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;symbolSize&quot;:[10,15]},&quot;axisTick&quot;:{&quot;show&quot;:&quot;auto&quot;,&quot;inside&quot;:false,&quot;length&quot;:5,&quot;lineStyle&quot;:{&quot;width&quot;:1}},&quot;splitNumber&quot;:5,&quot;minorTick&quot;:{&quot;show&quot;:false,&quot;splitNumber&quot;:5,&quot;length&quot;:3,&quot;lineStyle&quot;:{}},&quot;minorSplitLine&quot;:{&quot;show&quot;:false,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#F4F7FD&quot;,&quot;width&quot;:1}},&quot;show&quot;:true,&quot;z&quot;:0,&quot;inverse&quot;:false,&quot;name&quot;:&quot;&quot;,&quot;nameLocation&quot;:&quot;end&quot;,&quot;nameRotate&quot;:null,&quot;nameTruncate&quot;:{&quot;maxWidth&quot;:null,&quot;ellipsis&quot;:&quot;...&quot;,&quot;placeholder&quot;:&quot;.&quot;},&quot;nameTextStyle&quot;:{},&quot;nameGap&quot;:15,&quot;silent&quot;:false,&quot;triggerEvent&quot;:false,&quot;tooltip&quot;:{&quot;show&quot;:false},&quot;axisPointer&quot;:{},&quot;splitArea&quot;:{&quot;show&quot;:false,&quot;areaStyle&quot;:{&quot;color&quot;:[&quot;rgba(250,250,250,0.2)&quot;,&quot;rgba(210,219,238,0.2)&quot;]}},&quot;offset&quot;:0,&quot;type&quot;:&quot;value&quot;}],&quot;xAxis&quot;:[{&quot;axisLine&quot;:{&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#94a3b8&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;show&quot;:true,&quot;onZero&quot;:true,&quot;onZeroAxisIndex&quot;:null,&quot;symbol&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;symbolSize&quot;:[10,15]},&quot;axisLabel&quot;:{&quot;interval&quot;:0,&quot;fontSize&quot;:14,&quot;fontWeight&quot;:&quot;bold&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;rotate&quot;:0,&quot;showMinLabel&quot;:null,&quot;showMaxLabel&quot;:null,&quot;margin&quot;:8},&quot;data&quot;:[&quot;胸腔外科&quot;,&quot;骨科&quot;,&quot;眼科&quot;],&quot;boundaryGap&quot;:true,&quot;deduplication&quot;:null,&quot;splitLine&quot;:{&quot;show&quot;:false,&quot;lineStyle&quot;:{&quot;color&quot;:[&quot;#E0E6F1&quot;],&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;}},&quot;axisTick&quot;:{&quot;alignWithLabel&quot;:false,&quot;interval&quot;:&quot;auto&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;length&quot;:5,&quot;lineStyle&quot;:{&quot;width&quot;:1}},&quot;show&quot;:true,&quot;z&quot;:0,&quot;inverse&quot;:false,&quot;name&quot;:&quot;&quot;,&quot;nameLocation&quot;:&quot;end&quot;,&quot;nameRotate&quot;:null,&quot;nameTruncate&quot;:{&quot;maxWidth&quot;:null,&quot;ellipsis&quot;:&quot;...&quot;,&quot;placeholder&quot;:&quot;.&quot;},&quot;nameTextStyle&quot;:{},&quot;nameGap&quot;:15,&quot;silent&quot;:false,&quot;triggerEvent&quot;:false,&quot;tooltip&quot;:{&quot;show&quot;:false},&quot;axisPointer&quot;:{&quot;status&quot;:&quot;hide&quot;,&quot;value&quot;:2,&quot;seriesDataIndices&quot;:[{&quot;seriesIndex&quot;:0,&quot;dataIndexInside&quot;:2,&quot;dataIndex&quot;:2}]},&quot;splitArea&quot;:{&quot;show&quot;:false,&quot;areaStyle&quot;:{&quot;color&quot;:[&quot;rgba(250,250,250,0.2)&quot;,&quot;rgba(210,219,238,0.2)&quot;]}},&quot;offset&quot;:0,&quot;type&quot;:&quot;category&quot;}],&quot;grid&quot;:[{&quot;containLabel&quot;:true,&quot;left&quot;:&quot;5%&quot;,&quot;right&quot;:&quot;5%&quot;,&quot;bottom&quot;:&quot;5%&quot;,&quot;top&quot;:&quot;15%&quot;,&quot;show&quot;:false,&quot;z&quot;:0,&quot;backgroundColor&quot;:&quot;rgba(0,0,0,0)&quot;,&quot;borderWidth&quot;:1,&quot;borderColor&quot;:&quot;#ccc&quot;}],&quot;series&quot;:[{&quot;type&quot;:&quot;bar&quot;,&quot;data&quot;:[89,88.33,88],&quot;itemStyle&quot;:{&quot;color&quot;:&quot;#059669&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;position&quot;:&quot;top&quot;,&quot;color&quot;:&quot;#334155&quot;,&quot;fontSize&quot;:16,&quot;fontWeight&quot;:&quot;bold&quot;},&quot;z&quot;:2,&quot;coordinateSystem&quot;:&quot;cartesian2d&quot;,&quot;legendHoverLink&quot;:true,&quot;barMinHeight&quot;:0,&quot;barMinAngle&quot;:0,&quot;large&quot;:false,&quot;largeThreshold&quot;:400,&quot;progressive&quot;:3000,&quot;progressiveChunkMode&quot;:&quot;mod&quot;,&quot;clip&quot;:true,&quot;roundCap&quot;:false,&quot;showBackground&quot;:false,&quot;backgroundStyle&quot;:{&quot;color&quot;:&quot;rgba(180, 180, 180, 0.2)&quot;,&quot;borderColor&quot;:null,&quot;borderWidth&quot;:0,&quot;borderType&quot;:&quot;solid&quot;,&quot;borderRadius&quot;:0,&quot;shadowBlur&quot;:0,&quot;shadowColor&quot;:null,&quot;shadowOffsetX&quot;:0,&quot;shadowOffsetY&quot;:0,&quot;opacity&quot;:1},&quot;select&quot;:{&quot;itemStyle&quot;:{&quot;borderColor&quot;:&quot;#212121&quot;}},&quot;realtimeSort&quot;:false,&quot;emphasis&quot;:{&quot;label&quot;:{&quot;show&quot;:true}}}],&quot;visualMap&quot;:[],&quot;legend&quot;:[],&quot;markArea&quot;:[],&quot;markLine&quot;:[],&quot;markPoint&quot;:[],&quot;brush&quot;:[],&quot;dataZoom&quot;:[]}"><div style="position: relative; width: 472px; height: 450px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="590" height="562" style="position: absolute; left: 0px; top: 0px; width: 472px; height: 450px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class="" style="position: absolute; display: block; border-style: solid; white-space: nowrap; z-index: 9999999; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 10px; transition: opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1), visibility 0.2s cubic-bezier(0.23, 1, 0.32, 1), transform 0.4s cubic-bezier(0.23, 1, 0.32, 1); background-color: rgb(255, 255, 255); border-width: 1px; border-radius: 4px; color: rgb(102, 102, 102); font: 14px / 21px &quot;Noto Sans TC&quot;; padding: 10px; top: 0px; left: 0px; transform: translate3d(338px, 308px, 0px); border-color: rgb(255, 255, 255); pointer-events: none; visibility: hidden; opacity: 0;"><div style="margin: 0px 0 0;line-height:1;"><div style="margin: 0px 0 0;line-height:1;"><div style="font-size:14px;color:#666;font-weight:400;line-height:1;">眼科</div><div style="margin: 10px 0 0;line-height:1;"><div style="margin: 0px 0 0;line-height:1;"><div style="margin: 0px 0 0;line-height:1;"><span style="display:inline-block;margin-right:4px;border-radius:10px;width:10px;height:10px;background-color:#059669;"></span><span style="float:right;margin-left:10px;font-size:14px;color:#666;font-weight:900">88</span><div style="clear:both"></div></div><div style="clear:both"></div></div><div style="clear:both"></div></div><div style="clear:both"></div></div><div style="clear:both"></div></div></div></div>
+                    <div class="mt-4 p-4 bg-slate-50 dark:bg-slate-700/50 rounded-lg">
+                        <p class="text-2xl font-bold text-slate-800 dark:text-white text-center">
+                            (外科系)病歷指導優良前三名科別：
+                        </p>
+                        <p class="text-xl text-center mt-2 text-emerald-600 dark:text-emerald-300 font-semibold">
+                            胸腔外科、骨科、眼科
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: 主治醫師指導優良名單 -->
+        <section class="slide-section">
+            <h2 class="text-3xl md:text-4xl font-black text-center mb-8">
+                114年第三季(114/07~09月)<br>主治醫師病歷指導優良名單
+            </h2>
+            
+            <div class="overflow-hidden shadow-xl rounded-xl bg-white dark:bg-slate-800 mb-8 max-w-4xl mx-auto w-full">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>組別</th>
+                            <th>名次</th>
+                            <th>科別</th>
+                            <th>姓名</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 內科系 -->
+                        <tr>
+                            <td rowspan="3" class="font-bold text-medical-700 dark:text-medical-300 bg-medical-50 dark:bg-slate-800">内科系</td>
+                            <td>1</td><td>加護醫學部</td><td class="text-xl font-bold">楊俊杰</td>
+                        </tr>
+                        <tr><td>2</td><td>一般内科</td><td class="text-xl font-bold">葉正發</td></tr>
+                        <tr><td>3</td><td>心臟血管内科</td><td class="text-xl font-bold">蔣俊彥</td></tr>
+                        
+                        <!-- 外科系 -->
+                        <tr>
+                            <td rowspan="3" class="font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-slate-800">外科系</td>
+                            <td>1</td><td>骨科</td><td class="text-xl font-bold">鐘啟榮</td>
+                        </tr>
+                        <tr><td>2</td><td>骨科</td><td class="text-xl font-bold">林敬為</td></tr>
+                        <tr><td>3</td><td>胸腔外科</td><td class="text-xl font-bold">蘇英傑</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center gap-6 mt-4">
+                <div class="bg-blue-100 dark:bg-blue-900/30 p-4 rounded-lg text-center border border-blue-200 dark:border-blue-800">
+                    <p class="text-lg font-bold text-blue-800 dark:text-blue-200">
+                        指導分數達88分以上 (內科系)
+                    </p>
+                    <p class="text-3xl font-black text-blue-900 dark:text-white mt-2">
+                        42本 <span class="text-sm font-normal text-slate-500 dark:text-slate-400">/ 總本數64</span>
+                    </p>
+                </div>
+                <div class="bg-teal-100 dark:bg-teal-900/30 p-4 rounded-lg text-center border border-teal-200 dark:border-teal-800">
+                    <p class="text-lg font-bold text-teal-800 dark:text-teal-200">
+                        指導分數達88分以上 (外科系)
+                    </p>
+                    <p class="text-3xl font-black text-teal-900 dark:text-white mt-2">
+                        24本 <span class="text-sm font-normal text-slate-500 dark:text-slate-400">/ 總本數53</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: UGY 成績 -->
+        <section class="slide-section">
+            <h2 class="text-4xl font-black text-center mb-10">114-Q3 實習醫學生(UGY)成績</h2>
+            <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg w-full max-w-5xl mx-auto">
+                <div id="chart-ugy" class="chart-container h-[500px]" _echarts_instance_="ec_1764843126357" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;" data-chart-option="{&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;textStyle&quot;:{&quot;fontFamily&quot;:&quot;Noto Sans TC&quot;,&quot;fontSize&quot;:12,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;fontWeight&quot;:&quot;normal&quot;},&quot;darkMode&quot;:&quot;auto&quot;,&quot;colorBy&quot;:&quot;series&quot;,&quot;color&quot;:[&quot;#5470c6&quot;,&quot;#91cc75&quot;,&quot;#fac858&quot;,&quot;#ee6666&quot;,&quot;#73c0de&quot;,&quot;#3ba272&quot;,&quot;#fc8452&quot;,&quot;#9a60b4&quot;,&quot;#ea7ccc&quot;],&quot;gradientColor&quot;:[&quot;#f6efa6&quot;,&quot;#d88273&quot;,&quot;#bf444c&quot;],&quot;aria&quot;:{&quot;decal&quot;:{&quot;decals&quot;:[{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[1,0],&quot;dashArrayY&quot;:[2,5],&quot;symbolSize&quot;:1,&quot;rotation&quot;:0.5235987755982988},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;symbol&quot;:&quot;circle&quot;,&quot;dashArrayX&quot;:[[8,8],[0,8,8,0]],&quot;dashArrayY&quot;:[6,0],&quot;symbolSize&quot;:0.8},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[1,0],&quot;dashArrayY&quot;:[4,3],&quot;rotation&quot;:-0.7853981633974483},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[[6,6],[0,6,6,0]],&quot;dashArrayY&quot;:[6,0]},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[[1,0],[1,6]],&quot;dashArrayY&quot;:[1,0,6,0],&quot;rotation&quot;:0.7853981633974483},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;symbol&quot;:&quot;triangle&quot;,&quot;dashArrayX&quot;:[[9,9],[0,9,9,0]],&quot;dashArrayY&quot;:[7,2],&quot;symbolSize&quot;:0.75}]}},&quot;stateAnimation&quot;:{&quot;duration&quot;:300,&quot;easing&quot;:&quot;cubicOut&quot;},&quot;animation&quot;:&quot;auto&quot;,&quot;animationDuration&quot;:1000,&quot;animationDurationUpdate&quot;:500,&quot;animationEasing&quot;:&quot;cubicInOut&quot;,&quot;animationEasingUpdate&quot;:&quot;cubicInOut&quot;,&quot;animationThreshold&quot;:2000,&quot;progressiveThreshold&quot;:3000,&quot;progressive&quot;:400,&quot;hoverLayerThreshold&quot;:3000,&quot;useUTC&quot;:false,&quot;axisPointer&quot;:[{&quot;show&quot;:&quot;auto&quot;,&quot;z&quot;:50,&quot;type&quot;:&quot;line&quot;,&quot;snap&quot;:false,&quot;triggerTooltip&quot;:true,&quot;triggerEmphasis&quot;:true,&quot;value&quot;:null,&quot;status&quot;:null,&quot;link&quot;:[],&quot;animation&quot;:null,&quot;animationDurationUpdate&quot;:200,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#B9BEC9&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;dashed&quot;},&quot;shadowStyle&quot;:{&quot;color&quot;:&quot;rgba(210,219,238,0.2)&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;formatter&quot;:null,&quot;precision&quot;:&quot;auto&quot;,&quot;margin&quot;:3,&quot;color&quot;:&quot;#fff&quot;,&quot;padding&quot;:[5,7,5,7],&quot;backgroundColor&quot;:&quot;auto&quot;,&quot;borderColor&quot;:null,&quot;borderWidth&quot;:0,&quot;borderRadius&quot;:3},&quot;handle&quot;:{&quot;show&quot;:false,&quot;icon&quot;:&quot;M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4h1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7v-1.2h6.6z M13.3,22H6.7v-1.2h6.6z M13.3,19.6H6.7v-1.2h6.6z&quot;,&quot;size&quot;:45,&quot;margin&quot;:50,&quot;color&quot;:&quot;#333&quot;,&quot;shadowBlur&quot;:3,&quot;shadowColor&quot;:&quot;#aaa&quot;,&quot;shadowOffsetX&quot;:0,&quot;shadowOffsetY&quot;:2,&quot;throttle&quot;:40}}],&quot;tooltip&quot;:[{&quot;trigger&quot;:&quot;axis&quot;,&quot;z&quot;:60,&quot;show&quot;:true,&quot;showContent&quot;:true,&quot;triggerOn&quot;:&quot;mousemove|click&quot;,&quot;alwaysShowContent&quot;:false,&quot;displayMode&quot;:&quot;single&quot;,&quot;renderMode&quot;:&quot;auto&quot;,&quot;confine&quot;:null,&quot;showDelay&quot;:0,&quot;hideDelay&quot;:100,&quot;transitionDuration&quot;:0.4,&quot;enterable&quot;:false,&quot;backgroundColor&quot;:&quot;#fff&quot;,&quot;shadowBlur&quot;:10,&quot;shadowColor&quot;:&quot;rgba(0, 0, 0, .2)&quot;,&quot;shadowOffsetX&quot;:1,&quot;shadowOffsetY&quot;:2,&quot;borderRadius&quot;:4,&quot;borderWidth&quot;:1,&quot;padding&quot;:null,&quot;extraCssText&quot;:&quot;&quot;,&quot;axisPointer&quot;:{&quot;type&quot;:&quot;line&quot;,&quot;axis&quot;:&quot;auto&quot;,&quot;animation&quot;:&quot;auto&quot;,&quot;animationDurationUpdate&quot;:200,&quot;animationEasingUpdate&quot;:&quot;exponentialOut&quot;,&quot;crossStyle&quot;:{&quot;color&quot;:&quot;#999&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;dashed&quot;,&quot;textStyle&quot;:{}}},&quot;textStyle&quot;:{&quot;color&quot;:&quot;#666&quot;,&quot;fontSize&quot;:14}}],&quot;yAxis&quot;:[{&quot;splitLine&quot;:{&quot;lineStyle&quot;:{&quot;color&quot;:&quot;rgba(0,0,0,0.1)&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;show&quot;:true},&quot;axisLabel&quot;:{&quot;color&quot;:&quot;#334155&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;rotate&quot;:0,&quot;showMinLabel&quot;:null,&quot;showMaxLabel&quot;:null,&quot;margin&quot;:8,&quot;fontSize&quot;:12},&quot;min&quot;:80,&quot;boundaryGap&quot;:[0,0],&quot;axisLine&quot;:{&quot;show&quot;:&quot;auto&quot;,&quot;onZero&quot;:true,&quot;onZeroAxisIndex&quot;:null,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#6E7079&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;symbol&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;symbolSize&quot;:[10,15]},&quot;axisTick&quot;:{&quot;show&quot;:&quot;auto&quot;,&quot;inside&quot;:false,&quot;length&quot;:5,&quot;lineStyle&quot;:{&quot;width&quot;:1}},&quot;splitNumber&quot;:5,&quot;minorTick&quot;:{&quot;show&quot;:false,&quot;splitNumber&quot;:5,&quot;length&quot;:3,&quot;lineStyle&quot;:{}},&quot;minorSplitLine&quot;:{&quot;show&quot;:false,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#F4F7FD&quot;,&quot;width&quot;:1}},&quot;show&quot;:true,&quot;z&quot;:0,&quot;inverse&quot;:false,&quot;name&quot;:&quot;&quot;,&quot;nameLocation&quot;:&quot;end&quot;,&quot;nameRotate&quot;:null,&quot;nameTruncate&quot;:{&quot;maxWidth&quot;:null,&quot;ellipsis&quot;:&quot;...&quot;,&quot;placeholder&quot;:&quot;.&quot;},&quot;nameTextStyle&quot;:{},&quot;nameGap&quot;:15,&quot;silent&quot;:false,&quot;triggerEvent&quot;:false,&quot;tooltip&quot;:{&quot;show&quot;:false},&quot;axisPointer&quot;:{},&quot;splitArea&quot;:{&quot;show&quot;:false,&quot;areaStyle&quot;:{&quot;color&quot;:[&quot;rgba(250,250,250,0.2)&quot;,&quot;rgba(210,219,238,0.2)&quot;]}},&quot;offset&quot;:0,&quot;type&quot;:&quot;value&quot;}],&quot;xAxis&quot;:[{&quot;axisLine&quot;:{&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#94a3b8&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;show&quot;:true,&quot;onZero&quot;:true,&quot;onZeroAxisIndex&quot;:null,&quot;symbol&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;symbolSize&quot;:[10,15]},&quot;axisLabel&quot;:{&quot;interval&quot;:0,&quot;fontSize&quot;:14,&quot;fontWeight&quot;:&quot;bold&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;rotate&quot;:0,&quot;showMinLabel&quot;:null,&quot;showMaxLabel&quot;:null,&quot;margin&quot;:8},&quot;data&quot;:[&quot;內分泌\n新陳代謝科&quot;,&quot;泌尿外科&quot;,&quot;一般內科&quot;,&quot;婦產科&quot;],&quot;boundaryGap&quot;:true,&quot;deduplication&quot;:null,&quot;splitLine&quot;:{&quot;show&quot;:false,&quot;lineStyle&quot;:{&quot;color&quot;:[&quot;#E0E6F1&quot;],&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;}},&quot;axisTick&quot;:{&quot;alignWithLabel&quot;:false,&quot;interval&quot;:&quot;auto&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;length&quot;:5,&quot;lineStyle&quot;:{&quot;width&quot;:1}},&quot;show&quot;:true,&quot;z&quot;:0,&quot;inverse&quot;:false,&quot;name&quot;:&quot;&quot;,&quot;nameLocation&quot;:&quot;end&quot;,&quot;nameRotate&quot;:null,&quot;nameTruncate&quot;:{&quot;maxWidth&quot;:null,&quot;ellipsis&quot;:&quot;...&quot;,&quot;placeholder&quot;:&quot;.&quot;},&quot;nameTextStyle&quot;:{},&quot;nameGap&quot;:15,&quot;silent&quot;:false,&quot;triggerEvent&quot;:false,&quot;tooltip&quot;:{&quot;show&quot;:false},&quot;axisPointer&quot;:{&quot;status&quot;:&quot;hide&quot;,&quot;value&quot;:1,&quot;seriesDataIndices&quot;:[{&quot;seriesIndex&quot;:0,&quot;dataIndexInside&quot;:1,&quot;dataIndex&quot;:1}]},&quot;splitArea&quot;:{&quot;show&quot;:false,&quot;areaStyle&quot;:{&quot;color&quot;:[&quot;rgba(250,250,250,0.2)&quot;,&quot;rgba(210,219,238,0.2)&quot;]}},&quot;offset&quot;:0,&quot;type&quot;:&quot;category&quot;}],&quot;grid&quot;:[{&quot;containLabel&quot;:true,&quot;left&quot;:&quot;5%&quot;,&quot;right&quot;:&quot;5%&quot;,&quot;bottom&quot;:&quot;5%&quot;,&quot;top&quot;:&quot;15%&quot;,&quot;show&quot;:false,&quot;z&quot;:0,&quot;backgroundColor&quot;:&quot;rgba(0,0,0,0)&quot;,&quot;borderWidth&quot;:1,&quot;borderColor&quot;:&quot;#ccc&quot;}],&quot;series&quot;:[{&quot;type&quot;:&quot;bar&quot;,&quot;data&quot;:[93,87.88,87,84.21],&quot;itemStyle&quot;:{&quot;color&quot;:{&quot;colorStops&quot;:[{&quot;offset&quot;:0,&quot;color&quot;:&quot;#8b5cf6&quot;},{&quot;offset&quot;:1,&quot;color&quot;:&quot;#6d28d9&quot;}],&quot;x&quot;:0,&quot;y&quot;:0,&quot;x2&quot;:0,&quot;y2&quot;:1,&quot;type&quot;:&quot;linear&quot;,&quot;global&quot;:false}},&quot;label&quot;:{&quot;show&quot;:true,&quot;position&quot;:&quot;top&quot;,&quot;color&quot;:&quot;#334155&quot;,&quot;fontSize&quot;:18,&quot;fontWeight&quot;:&quot;bold&quot;},&quot;barWidth&quot;:&quot;40%&quot;,&quot;z&quot;:2,&quot;coordinateSystem&quot;:&quot;cartesian2d&quot;,&quot;legendHoverLink&quot;:true,&quot;barMinHeight&quot;:0,&quot;barMinAngle&quot;:0,&quot;large&quot;:false,&quot;largeThreshold&quot;:400,&quot;progressive&quot;:3000,&quot;progressiveChunkMode&quot;:&quot;mod&quot;,&quot;clip&quot;:true,&quot;roundCap&quot;:false,&quot;showBackground&quot;:false,&quot;backgroundStyle&quot;:{&quot;color&quot;:&quot;rgba(180, 180, 180, 0.2)&quot;,&quot;borderColor&quot;:null,&quot;borderWidth&quot;:0,&quot;borderType&quot;:&quot;solid&quot;,&quot;borderRadius&quot;:0,&quot;shadowBlur&quot;:0,&quot;shadowColor&quot;:null,&quot;shadowOffsetX&quot;:0,&quot;shadowOffsetY&quot;:0,&quot;opacity&quot;:1},&quot;select&quot;:{&quot;itemStyle&quot;:{&quot;borderColor&quot;:&quot;#212121&quot;}},&quot;realtimeSort&quot;:false,&quot;emphasis&quot;:{&quot;label&quot;:{&quot;show&quot;:true}}}],&quot;visualMap&quot;:[],&quot;legend&quot;:[],&quot;markArea&quot;:[],&quot;markLine&quot;:[],&quot;markPoint&quot;:[],&quot;brush&quot;:[],&quot;dataZoom&quot;:[]}"><div style="position: relative; width: 960px; height: 500px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="1200" height="625" style="position: absolute; left: 0px; top: 0px; width: 960px; height: 500px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class="" style="position: absolute; display: block; border-style: solid; white-space: nowrap; z-index: 9999999; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 10px; transition: opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1), visibility 0.2s cubic-bezier(0.23, 1, 0.32, 1), transform 0.4s cubic-bezier(0.23, 1, 0.32, 1); background-color: rgb(255, 255, 255); border-width: 1px; border-radius: 4px; color: rgb(102, 102, 102); font: 14px / 21px &quot;Noto Sans TC&quot;; padding: 10px; top: 0px; left: 0px; transform: translate3d(327px, 341px, 0px); border-color: rgb(255, 255, 255); pointer-events: none; visibility: hidden; opacity: 0;"><div style="margin: 0px 0 0;line-height:1;"><div style="margin: 0px 0 0;line-height:1;"><div style="font-size:14px;color:#666;font-weight:400;line-height:1;">泌尿外科</div><div style="margin: 10px 0 0;line-height:1;"><div style="margin: 0px 0 0;line-height:1;"><div style="margin: 0px 0 0;line-height:1;"><span style="display:inline-block;margin-right:4px;border-radius:10px;width:10px;height:10px;background-color:#8b5cf6;"></span><span style="float:right;margin-left:10px;font-size:14px;color:#666;font-weight:900">87.88</span><div style="clear:both"></div></div><div style="clear:both"></div></div><div style="clear:both"></div></div><div style="clear:both"></div></div><div style="clear:both"></div></div></div></div>
+            </div>
+        </section>
+
+        <!-- Slide 8: 評分不佳項目 -->
+        <section class="slide-section">
+            <h2 class="text-4xl font-black text-center mb-4">114年第三季評分不佳項目</h2>
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg w-full">
+                <div id="chart-poor-items" class="chart-container h-[500px]" _echarts_instance_="ec_1764843126358" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;" data-chart-option="{&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;textStyle&quot;:{&quot;fontFamily&quot;:&quot;Noto Sans TC&quot;,&quot;fontSize&quot;:12,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;fontWeight&quot;:&quot;normal&quot;},&quot;darkMode&quot;:&quot;auto&quot;,&quot;colorBy&quot;:&quot;series&quot;,&quot;color&quot;:[&quot;#5470c6&quot;,&quot;#91cc75&quot;,&quot;#fac858&quot;,&quot;#ee6666&quot;,&quot;#73c0de&quot;,&quot;#3ba272&quot;,&quot;#fc8452&quot;,&quot;#9a60b4&quot;,&quot;#ea7ccc&quot;],&quot;gradientColor&quot;:[&quot;#f6efa6&quot;,&quot;#d88273&quot;,&quot;#bf444c&quot;],&quot;aria&quot;:{&quot;decal&quot;:{&quot;decals&quot;:[{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[1,0],&quot;dashArrayY&quot;:[2,5],&quot;symbolSize&quot;:1,&quot;rotation&quot;:0.5235987755982988},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;symbol&quot;:&quot;circle&quot;,&quot;dashArrayX&quot;:[[8,8],[0,8,8,0]],&quot;dashArrayY&quot;:[6,0],&quot;symbolSize&quot;:0.8},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[1,0],&quot;dashArrayY&quot;:[4,3],&quot;rotation&quot;:-0.7853981633974483},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[[6,6],[0,6,6,0]],&quot;dashArrayY&quot;:[6,0]},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;dashArrayX&quot;:[[1,0],[1,6]],&quot;dashArrayY&quot;:[1,0,6,0],&quot;rotation&quot;:0.7853981633974483},{&quot;color&quot;:&quot;rgba(0, 0, 0, 0.2)&quot;,&quot;symbol&quot;:&quot;triangle&quot;,&quot;dashArrayX&quot;:[[9,9],[0,9,9,0]],&quot;dashArrayY&quot;:[7,2],&quot;symbolSize&quot;:0.75}]}},&quot;stateAnimation&quot;:{&quot;duration&quot;:300,&quot;easing&quot;:&quot;cubicOut&quot;},&quot;animation&quot;:&quot;auto&quot;,&quot;animationDuration&quot;:1000,&quot;animationDurationUpdate&quot;:500,&quot;animationEasing&quot;:&quot;cubicInOut&quot;,&quot;animationEasingUpdate&quot;:&quot;cubicInOut&quot;,&quot;animationThreshold&quot;:2000,&quot;progressiveThreshold&quot;:3000,&quot;progressive&quot;:400,&quot;hoverLayerThreshold&quot;:3000,&quot;useUTC&quot;:false,&quot;axisPointer&quot;:[{&quot;show&quot;:&quot;auto&quot;,&quot;z&quot;:50,&quot;type&quot;:&quot;line&quot;,&quot;snap&quot;:false,&quot;triggerTooltip&quot;:true,&quot;triggerEmphasis&quot;:true,&quot;value&quot;:null,&quot;status&quot;:null,&quot;link&quot;:[],&quot;animation&quot;:null,&quot;animationDurationUpdate&quot;:200,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#B9BEC9&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;dashed&quot;},&quot;shadowStyle&quot;:{&quot;color&quot;:&quot;rgba(210,219,238,0.2)&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;formatter&quot;:null,&quot;precision&quot;:&quot;auto&quot;,&quot;margin&quot;:3,&quot;color&quot;:&quot;#fff&quot;,&quot;padding&quot;:[5,7,5,7],&quot;backgroundColor&quot;:&quot;auto&quot;,&quot;borderColor&quot;:null,&quot;borderWidth&quot;:0,&quot;borderRadius&quot;:3},&quot;handle&quot;:{&quot;show&quot;:false,&quot;icon&quot;:&quot;M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4h1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7v-1.2h6.6z M13.3,22H6.7v-1.2h6.6z M13.3,19.6H6.7v-1.2h6.6z&quot;,&quot;size&quot;:45,&quot;margin&quot;:50,&quot;color&quot;:&quot;#333&quot;,&quot;shadowBlur&quot;:3,&quot;shadowColor&quot;:&quot;#aaa&quot;,&quot;shadowOffsetX&quot;:0,&quot;shadowOffsetY&quot;:2,&quot;throttle&quot;:40}}],&quot;tooltip&quot;:[{&quot;trigger&quot;:&quot;axis&quot;,&quot;z&quot;:60,&quot;show&quot;:true,&quot;showContent&quot;:true,&quot;triggerOn&quot;:&quot;mousemove|click&quot;,&quot;alwaysShowContent&quot;:false,&quot;displayMode&quot;:&quot;single&quot;,&quot;renderMode&quot;:&quot;auto&quot;,&quot;confine&quot;:null,&quot;showDelay&quot;:0,&quot;hideDelay&quot;:100,&quot;transitionDuration&quot;:0.4,&quot;enterable&quot;:false,&quot;backgroundColor&quot;:&quot;#fff&quot;,&quot;shadowBlur&quot;:10,&quot;shadowColor&quot;:&quot;rgba(0, 0, 0, .2)&quot;,&quot;shadowOffsetX&quot;:1,&quot;shadowOffsetY&quot;:2,&quot;borderRadius&quot;:4,&quot;borderWidth&quot;:1,&quot;padding&quot;:null,&quot;extraCssText&quot;:&quot;&quot;,&quot;axisPointer&quot;:{&quot;type&quot;:&quot;line&quot;,&quot;axis&quot;:&quot;auto&quot;,&quot;animation&quot;:&quot;auto&quot;,&quot;animationDurationUpdate&quot;:200,&quot;animationEasingUpdate&quot;:&quot;exponentialOut&quot;,&quot;crossStyle&quot;:{&quot;color&quot;:&quot;#999&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;dashed&quot;,&quot;textStyle&quot;:{}}},&quot;textStyle&quot;:{&quot;color&quot;:&quot;#666&quot;,&quot;fontSize&quot;:14}}],&quot;yAxis&quot;:[{&quot;type&quot;:&quot;value&quot;,&quot;name&quot;:&quot;本數&quot;,&quot;nameTextStyle&quot;:{&quot;fontSize&quot;:14,&quot;color&quot;:&quot;#334155&quot;,&quot;padding&quot;:[0,0,0,20]},&quot;axisLabel&quot;:{&quot;color&quot;:&quot;#334155&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;rotate&quot;:0,&quot;showMinLabel&quot;:null,&quot;showMaxLabel&quot;:null,&quot;margin&quot;:8,&quot;fontSize&quot;:12},&quot;boundaryGap&quot;:[0,0],&quot;axisLine&quot;:{&quot;show&quot;:&quot;auto&quot;,&quot;onZero&quot;:true,&quot;onZeroAxisIndex&quot;:null,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#6E7079&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;symbol&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;symbolSize&quot;:[10,15]},&quot;axisTick&quot;:{&quot;show&quot;:&quot;auto&quot;,&quot;inside&quot;:false,&quot;length&quot;:5,&quot;lineStyle&quot;:{&quot;width&quot;:1}},&quot;splitNumber&quot;:5,&quot;minorTick&quot;:{&quot;show&quot;:false,&quot;splitNumber&quot;:5,&quot;length&quot;:3,&quot;lineStyle&quot;:{}},&quot;minorSplitLine&quot;:{&quot;show&quot;:false,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#F4F7FD&quot;,&quot;width&quot;:1}},&quot;show&quot;:true,&quot;z&quot;:0,&quot;inverse&quot;:false,&quot;nameLocation&quot;:&quot;end&quot;,&quot;nameRotate&quot;:null,&quot;nameTruncate&quot;:{&quot;maxWidth&quot;:null,&quot;ellipsis&quot;:&quot;...&quot;,&quot;placeholder&quot;:&quot;.&quot;},&quot;nameGap&quot;:15,&quot;silent&quot;:false,&quot;triggerEvent&quot;:false,&quot;tooltip&quot;:{&quot;show&quot;:false},&quot;axisPointer&quot;:{},&quot;splitLine&quot;:{&quot;show&quot;:true,&quot;lineStyle&quot;:{&quot;color&quot;:[&quot;#E0E6F1&quot;],&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;}},&quot;splitArea&quot;:{&quot;show&quot;:false,&quot;areaStyle&quot;:{&quot;color&quot;:[&quot;rgba(250,250,250,0.2)&quot;,&quot;rgba(210,219,238,0.2)&quot;]}},&quot;offset&quot;:0}],&quot;xAxis&quot;:[{&quot;type&quot;:&quot;category&quot;,&quot;data&quot;:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35],&quot;axisLabel&quot;:{&quot;interval&quot;:0,&quot;fontSize&quot;:10,&quot;color&quot;:&quot;#334155&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;rotate&quot;:0,&quot;showMinLabel&quot;:null,&quot;showMaxLabel&quot;:null,&quot;margin&quot;:8},&quot;boundaryGap&quot;:true,&quot;deduplication&quot;:null,&quot;splitLine&quot;:{&quot;show&quot;:false,&quot;lineStyle&quot;:{&quot;color&quot;:[&quot;#E0E6F1&quot;],&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;}},&quot;axisTick&quot;:{&quot;alignWithLabel&quot;:false,&quot;interval&quot;:&quot;auto&quot;,&quot;show&quot;:true,&quot;inside&quot;:false,&quot;length&quot;:5,&quot;lineStyle&quot;:{&quot;width&quot;:1}},&quot;show&quot;:true,&quot;z&quot;:0,&quot;inverse&quot;:false,&quot;name&quot;:&quot;&quot;,&quot;nameLocation&quot;:&quot;end&quot;,&quot;nameRotate&quot;:null,&quot;nameTruncate&quot;:{&quot;maxWidth&quot;:null,&quot;ellipsis&quot;:&quot;...&quot;,&quot;placeholder&quot;:&quot;.&quot;},&quot;nameTextStyle&quot;:{},&quot;nameGap&quot;:15,&quot;silent&quot;:false,&quot;triggerEvent&quot;:false,&quot;tooltip&quot;:{&quot;show&quot;:false},&quot;axisPointer&quot;:{&quot;status&quot;:&quot;hide&quot;,&quot;value&quot;:30,&quot;seriesDataIndices&quot;:[{&quot;seriesIndex&quot;:0,&quot;dataIndexInside&quot;:30,&quot;dataIndex&quot;:30}]},&quot;axisLine&quot;:{&quot;show&quot;:true,&quot;onZero&quot;:true,&quot;onZeroAxisIndex&quot;:null,&quot;lineStyle&quot;:{&quot;color&quot;:&quot;#6E7079&quot;,&quot;width&quot;:1,&quot;type&quot;:&quot;solid&quot;},&quot;symbol&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;symbolSize&quot;:[10,15]},&quot;splitArea&quot;:{&quot;show&quot;:false,&quot;areaStyle&quot;:{&quot;color&quot;:[&quot;rgba(250,250,250,0.2)&quot;,&quot;rgba(210,219,238,0.2)&quot;]}},&quot;offset&quot;:0}],&quot;grid&quot;:[{&quot;containLabel&quot;:true,&quot;left&quot;:&quot;5%&quot;,&quot;right&quot;:&quot;5%&quot;,&quot;bottom&quot;:&quot;5%&quot;,&quot;top&quot;:&quot;15%&quot;,&quot;show&quot;:false,&quot;z&quot;:0,&quot;backgroundColor&quot;:&quot;rgba(0,0,0,0)&quot;,&quot;borderWidth&quot;:1,&quot;borderColor&quot;:&quot;#ccc&quot;}],&quot;series&quot;:[{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:[3,1,1,0,0,0,7,1,6,1,0,4,5,2,0,0,2,2,3,1,0,0,0,0,2,1,2,3,0,0,0,0,5,0,18],&quot;lineStyle&quot;:{&quot;width&quot;:4,&quot;color&quot;:&quot;#dc2626&quot;,&quot;type&quot;:&quot;solid&quot;},&quot;symbol&quot;:&quot;circle&quot;,&quot;symbolSize&quot;:8,&quot;itemStyle&quot;:{&quot;color&quot;:&quot;#dc2626&quot;},&quot;markPoint&quot;:{&quot;data&quot;:[{&quot;coord&quot;:[34,18],&quot;value&quot;:&quot;18&quot;,&quot;itemStyle&quot;:{&quot;color&quot;:&quot;#dc2626&quot;},&quot;label&quot;:{&quot;fontSize&quot;:24,&quot;fontWeight&quot;:&quot;bold&quot;,&quot;color&quot;:&quot;white&quot;},&quot;emphasis&quot;:{&quot;label&quot;:{}}}],&quot;symbolSize&quot;:60,&quot;label&quot;:{},&quot;emphasis&quot;:{&quot;label&quot;:{}}},&quot;z&quot;:3,&quot;coordinateSystem&quot;:&quot;cartesian2d&quot;,&quot;legendHoverLink&quot;:true,&quot;clip&quot;:true,&quot;label&quot;:{&quot;position&quot;:&quot;top&quot;},&quot;endLabel&quot;:{&quot;show&quot;:false,&quot;valueAnimation&quot;:true,&quot;distance&quot;:8},&quot;emphasis&quot;:{&quot;scale&quot;:true,&quot;label&quot;:{}},&quot;step&quot;:false,&quot;smooth&quot;:false,&quot;smoothMonotone&quot;:null,&quot;symbolRotate&quot;:null,&quot;showSymbol&quot;:true,&quot;showAllSymbol&quot;:&quot;auto&quot;,&quot;connectNulls&quot;:false,&quot;sampling&quot;:&quot;none&quot;,&quot;animationEasing&quot;:&quot;linear&quot;,&quot;progressive&quot;:0,&quot;hoverLayerThreshold&quot;:null,&quot;universalTransition&quot;:{&quot;divideShape&quot;:&quot;clone&quot;},&quot;triggerLineEvent&quot;:false}],&quot;visualMap&quot;:[],&quot;legend&quot;:[],&quot;markArea&quot;:[],&quot;markLine&quot;:[],&quot;markPoint&quot;:[{&quot;z&quot;:5,&quot;symbol&quot;:&quot;pin&quot;,&quot;symbolSize&quot;:50,&quot;tooltip&quot;:{&quot;trigger&quot;:&quot;item&quot;},&quot;label&quot;:{&quot;show&quot;:true,&quot;position&quot;:&quot;inside&quot;},&quot;itemStyle&quot;:{&quot;borderWidth&quot;:2},&quot;emphasis&quot;:{&quot;label&quot;:{&quot;show&quot;:true}}}],&quot;brush&quot;:[],&quot;dataZoom&quot;:[]}"><div style="position: relative; width: 1040px; height: 500px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="1300" height="625" style="position: absolute; left: 0px; top: 0px; width: 1040px; height: 500px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class="" style="position: absolute; display: block; border-style: solid; white-space: nowrap; z-index: 9999999; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 10px; transition: opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1), visibility 0.2s cubic-bezier(0.23, 1, 0.32, 1), transform 0.4s cubic-bezier(0.23, 1, 0.32, 1); background-color: rgb(255, 255, 255); border-width: 1px; border-radius: 4px; color: rgb(102, 102, 102); font: 14px / 21px &quot;Noto Sans TC&quot;; padding: 10px; top: 0px; left: 0px; transform: translate3d(879px, 176px, 0px); border-color: rgb(255, 255, 255); pointer-events: none; visibility: hidden; opacity: 0;"><div style="margin: 0px 0 0;line-height:1;"><div style="margin: 0px 0 0;line-height:1;"><div style="font-size:14px;color:#666;font-weight:400;line-height:1;">31</div><div style="margin: 10px 0 0;line-height:1;"><div style="margin: 0px 0 0;line-height:1;"><div style="margin: 0px 0 0;line-height:1;"><span style="display:inline-block;margin-right:4px;border-radius:10px;width:10px;height:10px;background-color:#dc2626;"></span><span style="float:right;margin-left:10px;font-size:14px;color:#666;font-weight:900">0</span><div style="clear:both"></div></div><div style="clear:both"></div></div><div style="clear:both"></div></div><div style="clear:both"></div></div><div style="clear:both"></div></div></div></div>
+                <div class="mt-4 text-center">
+                     <p class="text-3xl font-black text-red-600 dark:text-red-400">
+                        <i class="fas fa-exclamation-triangle mr-2"></i>不佳項目：第35項 (18本)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 9: 缺失與改善 Part 1 -->
+        <section class="slide-section justify-start pt-20">
+             <div class="max-w-4xl mx-auto w-full space-y-8">
+                
+                <!-- 常見缺失 -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-8 border-l-8 border-rose-500">
+                    <h2 class="text-3xl font-black text-rose-600 dark:text-rose-400 mb-6 flex items-center">
+                        <i class="fas fa-spade text-2xl mr-3"></i> 病歷審查常見缺失
+                    </h2>
+                    <div class="space-y-4 text-lg">
+                        <p class="font-bold text-slate-800 dark:text-white text-xl">
+                            ◆ 第35項：
+                        </p>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                            主治醫師未修改學員之病歷書寫，對其所屬醫學團隊醫師的 Admission Note，<span class="font-bold text-rose-600 dark:text-rose-400">未給予指正或評論</span>。
+                        </p>
+                        <div class="mt-4 bg-rose-50 dark:bg-rose-900/20 p-4 rounded-lg inline-block">
+                             <p class="font-bold text-rose-800 dark:text-rose-200">
+                                Q2 上季 20/144 本 ➝ Q3 本季 18/126 本
+                             </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 改善方案 -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-8 border-l-8 border-amber-500">
+                    <h2 class="text-3xl font-black text-amber-600 dark:text-amber-400 mb-6">
+                        <i class="fas fa-clipboard-check mr-3"></i> 改善方案
+                    </h2>
+                    <ul class="space-y-4 list-disc list-inside text-lg text-slate-700 dark:text-slate-300">
+                        <li class="pl-2">
+                            <span class="font-bold text-slate-900 dark:text-white">第35項：</span>持續個別通知單季1本(Q2上季16位，Q3本季12位)，及單季2本以上(Q2上季2位，Q3本季3位)，要求積極改善。
+                        </li>
+                        <li class="pl-2">
+                            兩季(Q2上季+Q3本季)皆超過2本的主治醫師為 <span class="text-2xl font-black text-emerald-600 dark:text-emerald-400">0</span> 位。
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 追蹤讀取比率 -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-8 border-l-8 border-blue-500">
+                    <h2 class="text-3xl font-black text-blue-600 dark:text-blue-400 mb-6">
+                        <i class="fas fa-eye mr-3"></i> 追蹤讀取比率
+                    </h2>
+                    <p class="text-lg text-slate-700 dark:text-slate-300 mb-4">
+                        追蹤學員實際查詢(點選)評核分數及評語：
+                    </p>
+                    <div class="flex gap-4 items-center">
+                         <div class="bg-gray-100 dark:bg-slate-700 px-6 py-3 rounded-xl">
+                            <span class="block text-sm text-gray-500 dark:text-gray-400">Q1 讀取比率</span>
+                            <span class="text-2xl font-black text-slate-800 dark:text-white">48.53%</span>
+                         </div>
+                         <i class="fas fa-arrow-right text-gray-400"></i>
+                         <div class="bg-blue-50 dark:bg-blue-900/30 px-6 py-3 rounded-xl border border-blue-200 dark:border-blue-800">
+                            <span class="block text-sm text-blue-600 dark:text-blue-400">Q2 上季讀取比率</span>
+                            <span class="text-2xl font-black text-blue-800 dark:text-blue-200">42.22%</span>
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Slide 10: 監測結果 -->
+        <section class="slide-section">
+            <h2 class="text-3xl font-black text-center mb-6 leading-tight max-w-5xl mx-auto">
+                監測內外婦兒骨科 PGY 醫師須達每月至少書寫 8 本<br>
+                R1 及 R2 每月至少 4 本 Primary Care 病歷，查詢結果:
+            </h2>
+
+            <div class="w-full max-w-4xl mx-auto space-y-8">
+                <!-- Table 1: PGY vs R -->
+                <div class="bg-white dark:bg-slate-800 shadow-xl rounded-xl overflow-hidden">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">職別\區間</th>
+                                <th colspan="2" class="bg-slate-200 dark:bg-slate-700">Q2上季 (4月+5月+6月)</th>
+                                <th colspan="2" class="bg-blue-100 dark:bg-blue-900/50">Q3本季 (9月)</th>
+                            </tr>
+                            <tr>
+                                <th class="bg-slate-50 dark:bg-slate-800">達成人數</th>
+                                <th class="bg-slate-50 dark:bg-slate-800">監測人數</th>
+                                <th class="bg-blue-50 dark:bg-blue-900/20">達成人數</th>
+                                <th class="bg-blue-50 dark:bg-blue-900/20">監測人數</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-bold">PGY (PGY1+PGY2)</td>
+                                <td>114 (81.43%)</td>
+                                <td>140</td>
+                                <td class="font-bold text-blue-700 dark:text-blue-300">39 (73.58%)</td>
+                                <td>53</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold">R (R1+R2)</td>
+                                <td>45 (88.24%)</td>
+                                <td>51</td>
+                                <td class="font-bold text-blue-700 dark:text-blue-300">15 (83.33%)</td>
+                                <td>18</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Table 2: R1 & R2 Breakdown -->
+                <div class="bg-white dark:bg-slate-800 shadow-xl rounded-xl overflow-hidden">
+                    <div class="p-4 bg-slate-100 dark:bg-slate-700 border-b border-slate-200 dark:border-slate-600">
+                        <h3 class="font-bold text-lg text-center" data-element-id="507fe48c-595e-4da8-9392-c8c5f7a4db76">内外婦兒骨科 R1 及 R2：</h3>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">區間<br>科別</th>
+                                <th colspan="2" class="bg-slate-200 dark:bg-slate-700">Q2上季 (4月+5月+6月)</th>
+                                <th colspan="2" class="bg-emerald-100 dark:bg-emerald-900/50">Q3本季 (9月)</th>
+                            </tr>
+                            <tr>
+                                <th class="bg-slate-50 dark:bg-slate-800">達成人數</th>
+                                <th class="bg-slate-50 dark:bg-slate-800">監測人數</th>
+                                <th class="bg-emerald-50 dark:bg-emerald-900/20">達成人數</th>
+                                <th class="bg-emerald-50 dark:bg-emerald-900/20">監測人數</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>内科部</td>
+                                <td>19 (90.48%)</td><td>21</td>
+                                <td>5 (83.33%)</td><td>6</td>
+                            </tr>
+                            <tr>
+                                <td>外科部</td>
+                                <td>14 (87.50%)</td><td>16</td>
+                                <td>6 (75.00%)</td><td>8</td>
+                            </tr>
+                            <tr>
+                                <td>婦產部</td>
+                                <td>7 (87.50%)</td><td>8</td>
+                                <td class="font-bold text-emerald-600 dark:text-emerald-400">1 (100.00%)</td><td>1</td>
+                            </tr>
+                            <tr>
+                                <td>兒科部</td>
+                                <td class="text-gray-400">N/A</td><td class="text-gray-400">N/A</td>
+                                <td class="text-gray-400">N/A</td><td class="text-gray-400">N/A</td>
+                            </tr>
+                            <tr>
+                                <td>骨科部</td>
+                                <td>5 (83.33%)</td><td>6</td>
+                                <td class="font-bold text-emerald-600 dark:text-emerald-400">3 (100.00%)</td><td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Slide 11: Final Improvement Plan -->
+        <section class="slide-section">
+             <div class="max-w-4xl mx-auto w-full">
+                <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-12 border-t-8 border-indigo-500 text-center">
+                    <h2 class="text-4xl font-black text-indigo-600 dark:text-indigo-400 mb-8">
+                        <i class="fas fa-lightbulb mr-3"></i> 改善方案
+                    </h2>
+                    <p class="text-2xl font-bold text-slate-800 dark:text-white leading-relaxed">
+                        持續個別通知兩季(Q2上季+Q3本季)<br>皆未達成之 R1 及 R2 <span class="text-rose-600 text-3xl mx-2">(1位)</span>，<br>要求積極改善。
+                    </p>
+                </div>
+             </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white dark:bg-slate-900 py-8 border-t border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 text-center text-slate-500 dark:text-slate-400">
+            
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle Logic
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        // Check system preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+        } else {
+            htmlElement.classList.remove('dark');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+            if (htmlElement.classList.contains('dark')) {
+                localStorage.theme = 'dark';
+            } else {
+                localStorage.theme = 'light';
+            }
+            initCharts(); // Re-render charts for theme change
+        });
+
+        // Chart Initialization
+        let charts = [];
+
+        function initCharts() {
+            charts.forEach(chart => chart.dispose());
+            charts = [];
+
+            const isDark = htmlElement.classList.contains('dark');
+            const textColor = isDark ? '#e2e8f0' : '#334155';
+            const axisColor = isDark ? '#64748b' : '#94a3b8';
+            const gridColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
+            const backgroundColor = 'transparent';
+
+            const commonOptions = {
+                backgroundColor: backgroundColor,
+                textStyle: { fontFamily: 'Noto Sans TC' },
+                grid: { containLabel: true, left: '5%', right: '5%', bottom: '5%', top: '15%' },
+                xAxis: { axisLine: { lineStyle: { color: axisColor } }, axisLabel: { color: textColor, fontSize: 14 } },
+                yAxis: { splitLine: { lineStyle: { color: gridColor } }, axisLabel: { color: textColor } },
+                tooltip: { trigger: 'axis' }
+            };
+
+            // 1. Internal Score Chart
+            const chartInternal = echarts.init(document.getElementById('chart-internal-score'));
+            chartInternal.setOption({
+                ...commonOptions,
+                xAxis: { ...commonOptions.xAxis, data: ['內分泌\n新陳代謝科', '復健科', '血液腫瘤科'], axisLabel: { interval: 0, rotate: 0, fontSize: 14, fontWeight: 'bold' } },
+                yAxis: { ...commonOptions.yAxis, min: 80, max: 95 },
+                series: [{
+                    name: '分數',
+                    type: 'bar',
+                    data: [93.00, 89.40, 89.38],
+                    itemStyle: { color: '#0ea5e9' },
+                    label: { show: true, position: 'top', color: textColor, fontSize: 16, fontWeight: 'bold' },
+                    markLine: {
+                        data: [{ yAxis: 87.1, name: '內科系平均 87.1' }],
+                        lineStyle: { color: '#ef4444', width: 3, type: 'solid' },
+                        label: { show: true, position: 'end', formatter: '平均: {c}', color: '#ef4444', fontSize: 14, fontWeight: 'bold' }
+                    }
+                }]
+            });
+            charts.push(chartInternal);
+
+            // 2. Surgical Score Chart
+            const chartSurgical = echarts.init(document.getElementById('chart-surgical-score'));
+            chartSurgical.setOption({
+                ...commonOptions,
+                xAxis: { ...commonOptions.xAxis, data: ['眼科', '神經外科', '一般及\n消化系外科'], axisLabel: { interval: 0, rotate: 0, fontSize: 14, fontWeight: 'bold' } },
+                yAxis: { ...commonOptions.yAxis, min: 80, max: 95 },
+                series: [{
+                    name: '分數',
+                    type: 'bar',
+                    data: [89.76, 88.39, 88.23],
+                    itemStyle: { color: '#10b981' },
+                    label: { show: true, position: 'top', color: textColor, fontSize: 16, fontWeight: 'bold' },
+                    markLine: {
+                        data: [{ yAxis: 87.11, name: '外科系平均 87.11' }],
+                        lineStyle: { color: '#ef4444', width: 3, type: 'solid' },
+                        label: { show: true, position: 'end', formatter: '平均: {c}', color: '#ef4444', fontSize: 14, fontWeight: 'bold' }
+                    }
+                }]
+            });
+            charts.push(chartSurgical);
+
+            // 3. Self Review Chart
+            const chartSelf = echarts.init(document.getElementById('chart-self-review'));
+            chartSelf.setOption({
+                ...commonOptions,
+                xAxis: { ...commonOptions.xAxis, data: ['加護醫學部', '精神醫學部', '兒科部', '婦產部', '急診醫學部'], axisLabel: { interval: 0, fontSize: 14, fontWeight: 'bold' } },
+                yAxis: { ...commonOptions.yAxis, min: 80 },
+                series: [{
+                    type: 'bar',
+                    data: [90.3, 90.17, 88.87, 87.24, 86.05],
+                    itemStyle: { 
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                            { offset: 0, color: '#6366f1' },
+                            { offset: 1, color: '#4338ca' }
+                        ])
+                    },
+                    label: { show: true, position: 'top', color: textColor, fontSize: 18, fontWeight: 'bold' }
+                }]
+            });
+            charts.push(chartSelf);
+
+            // 4. Internal Guide Chart
+            const chartIntGuide = echarts.init(document.getElementById('chart-internal-guide'));
+            chartIntGuide.setOption({
+                ...commonOptions,
+                xAxis: { ...commonOptions.xAxis, data: ['內分泌\n新陳代謝科', '精神醫學部', '血液腫瘤科'], axisLabel: { interval: 0, fontSize: 14, fontWeight: 'bold' } },
+                yAxis: { ...commonOptions.yAxis, min: 85, max: 92 },
+                series: [{
+                    type: 'bar',
+                    data: [89.50, 89.00, 89.00],
+                    itemStyle: { color: '#3b82f6' },
+                    label: { show: true, position: 'top', color: textColor, fontSize: 16, fontWeight: 'bold' }
+                }]
+            });
+            charts.push(chartIntGuide);
+
+            // 5. Surgical Guide Chart
+            const chartSurgGuide = echarts.init(document.getElementById('chart-surgical-guide'));
+            chartSurgGuide.setOption({
+                ...commonOptions,
+                xAxis: { ...commonOptions.xAxis, data: ['胸腔外科', '骨科', '眼科'], axisLabel: { interval: 0, fontSize: 14, fontWeight: 'bold' } },
+                yAxis: { ...commonOptions.yAxis, min: 85, max: 92 },
+                series: [{
+                    type: 'bar',
+                    data: [89.00, 88.33, 88.00],
+                    itemStyle: { color: '#059669' },
+                    label: { show: true, position: 'top', color: textColor, fontSize: 16, fontWeight: 'bold' }
+                }]
+            });
+            charts.push(chartSurgGuide);
+
+            // 6. UGY Chart
+            const chartUGY = echarts.init(document.getElementById('chart-ugy'));
+            chartUGY.setOption({
+                ...commonOptions,
+                xAxis: { ...commonOptions.xAxis, data: ['內分泌\n新陳代謝科', '泌尿外科', '一般內科', '婦產科'], axisLabel: { interval: 0, fontSize: 14, fontWeight: 'bold' } },
+                yAxis: { ...commonOptions.yAxis, min: 80 },
+                series: [{
+                    type: 'bar',
+                    data: [93, 87.88, 87, 84.21],
+                    itemStyle: { 
+                         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                            { offset: 0, color: '#8b5cf6' },
+                            { offset: 1, color: '#6d28d9' }
+                        ])
+                    },
+                    label: { show: true, position: 'top', color: textColor, fontSize: 18, fontWeight: 'bold' },
+                    barWidth: '40%'
+                }]
+            });
+            charts.push(chartUGY);
+
+            // 7. Poor Items Chart (Line Chart 1-35)
+            const chartPoor = echarts.init(document.getElementById('chart-poor-items'));
+            const poorData = [3, 1, 1, 0, 0, 0, 7, 1, 6, 1, 0, 4, 5, 2, 0, 0, 2, 2, 3, 1, 0, 0, 0, 0, 2, 1, 2, 3, 0, 0, 0, 0, 5, 0, 18];
+            const xData = Array.from({length: 35}, (_, i) => i + 1);
+            
+            chartPoor.setOption({
+                ...commonOptions,
+                tooltip: { trigger: 'axis' },
+                xAxis: { 
+                    type: 'category',
+                    data: xData,
+                    axisLabel: { interval: 0, fontSize: 10, color: textColor }
+                },
+                yAxis: { 
+                    type: 'value',
+                    name: '本數',
+                    nameTextStyle: { fontSize: 14, color: textColor, padding: [0, 0, 0, 20] },
+                    axisLabel: { color: textColor }
+                },
+                series: [{
+                    type: 'line',
+                    data: poorData,
+                    lineStyle: { width: 4, color: isDark ? '#f87171' : '#dc2626' },
+                    symbol: 'circle',
+                    symbolSize: 8,
+                    itemStyle: { color: isDark ? '#f87171' : '#dc2626' },
+                    markPoint: {
+                        data: [
+                            { 
+                                coord: [34, 18], 
+                                value: '18',
+                                itemStyle: { color: '#dc2626' },
+                                label: { fontSize: 24, fontWeight: 'bold', color: 'white' }
+                            }
+                        ],
+                        symbolSize: 60
+                    }
+                }]
+            });
+            charts.push(chartPoor);
+        }
+
+        // Initialize on load
+        window.addEventListener('load', initCharts);
+        
+        // Resize listener
+        window.addEventListener('resize', () => {
+            charts.forEach(chart => chart.resize());
+        });
+
+    </script>
+
+</body></html>
